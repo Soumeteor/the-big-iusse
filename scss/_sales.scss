@@ -1,0 +1,44 @@
+.sales{
+    h2{
+        font-size: 36px;
+        text-align: center;
+        padding: 20px 0 20px 50px;
+    }
+    .salesContent{
+        display: flex;
+        margin-bottom: 50px;
+        .salesStory{
+            width: 80%;
+            margin: 0 auto;
+            .salesList{
+                display: flex;
+                justify-content: space-between;
+                li{
+                    width: 48%;
+                    padding: 10px;
+                    img{
+                        width: 100%;
+                    }
+                    .storyTxt{
+                        h3{
+                            font-size: 25px;
+                            text-align: center;
+                            padding: 10px 0;
+                        }
+                        p{
+                            margin-bottom: 20px;
+                            padding: 10px;
+                        }
+                        p:first-child{
+                            font-size: 20px;
+                        }
+                        p:last-child{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
