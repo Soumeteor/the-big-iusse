@@ -12,18 +12,44 @@
             margin: 0 auto;
             .salesList{
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
+                // margin: auto;
+                margin-bottom: 50px;
                 li{
-                    width: 48%;
+                    width: 45%;
+                    height: 100%;
                     padding: 10px;
+                    // border: 1px solid #ccc;
+                    text-align: center;
+                    background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/sales/bg-sales.png?raw=true);
                     img{
-                        width: 100%;
+                        width: 90%;
+                        box-shadow: 5px 5px 5px #ccc;
+                    }
+                    > .moreBtn{
+                        padding-left: 0;
+                    }
+                    > .moreBtn:before{
+                        top: 12px;
+                        left: 0;
                     }
                     .storyTxt{
                         h3{
                             font-size: 25px;
                             text-align: center;
-                            padding: 10px 0;
+                            padding: 20px 0;
+                            position: relative;
+                        }
+                        h3:before{
+                            content: "";
+                            position: absolute;
+                            width: 0;
+                            height: 35%;
+                            background-color: #fa0;
+                            left: 25%;
+                            bottom: 10px;
+                            z-index: -1;
+                            transition: width .3s;
                         }
                         p{
                             margin-bottom: 20px;
@@ -31,14 +57,18 @@
                         }
                         p:first-child{
                             font-size: 20px;
+                            text-align: left;
                         }
                         p:last-child{
                             font-size: 14px;
+                            text-align: left;
                         }
                     }
+                }
+                li:hover > .storyTxt h3:before{
+                    width: 50%;
                 }
             }
         }
     }
-
 }
