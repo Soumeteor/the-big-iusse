@@ -1,0 +1,45 @@
+.footer{
+    .sectionContainer{
+        background-color: #fa0;
+        padding: 50px 0;
+    }
+}
+.footerContent{
+    width: 80%;
+    margin: 0 auto;
+    .footerInfo:first-child{
+        margin-bottom: 50px;
+    }
+    .footerInfo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        font-size: 14px;
+        .footerSocial{
+            display: flex;
+            align-items: center;
+            li{
+                font-size: 0;
+                width: 50px;
+                a{
+                    display: block;
+                    margin: 0 10px;
+                }
+            }
+        }
+        .footerAboutIssue{
+            display: flex;
+        }
+    }
+    
+}
+.copyright{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #777;
+}

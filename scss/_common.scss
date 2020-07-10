@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
-body{
+html,body{
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
 h1, h2, h3, h4, h5, h6{
     line-height: 1.2;
 }
 *{
     box-sizing: border-box;
-    outline: 1px solid #f00;
+    // outline: 1px solid #f00;
 }
 a,a:hover{
     text-decoration: none;
@@ -56,8 +57,11 @@ img{
         }
     }
 }
-.asideTitlePic{
+.asideCommon{
     width: 14%;
+    position: sticky;
+    height: 100%;
+    top: 50px;
     img{
         width: 100%;        
     }
@@ -71,11 +75,11 @@ img{
     position: relative;
     a{
         display: block;
-        padding: 13px 12px;
+        padding: 13px 24px;
         transform: translate(-5px, -5px);
         box-shadow: 5px 5px 0 #fa0;
         position: relative;
-        transition: .5s;
+        transition: .3s;
     }
     a:before{
         content: "";
@@ -84,7 +88,7 @@ img{
         border-top: 2px solid #aaa;
         top: 0;
         left: -12px;
-        transition: .5s;
+        transition: .3s;
     }
     a:before{
         border-bottom: 2px solid #aaa;
@@ -97,7 +101,7 @@ img{
         border-right: 2px solid #aaa;
         top: -6px;
         right: 0;
-        transition: .5s;
+        transition: .3s;
     }
     a:after{
         border-left: 2px solid #aaa;
@@ -125,10 +129,13 @@ img{
     height: 35%;
     border-left: 2px solid #fff;
     z-index: 2;
-    top: 7px;
-    left: 1px;
-    transition: .5s;
+    top: 12px;
+    left: 50px;
+    transform: translate(-5px, -5px);
+    transition: .3s;
+    
 }
 .moreBtn:hover:before{
-    opacity: 0;
+    height: 0;
+    transform: translate(5px, 5px);
 }
