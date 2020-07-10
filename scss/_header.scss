@@ -1,0 +1,39 @@
+.header{
+    h1{
+        font-size: 0;
+    }
+    .headerBar{
+        display: none;
+        
+    }
+    .headerBanner{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        .impression{
+            width: 40%;
+            height: 100vh;
+            line-height: 100vh;
+            padding: 10px;
+            border-right: 1px solid #aaa;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .bannerTxt{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            img{
+                width: 100%;
+            }
+        }
+        p{
+            font-style: italic;
+        }
+    }
+}

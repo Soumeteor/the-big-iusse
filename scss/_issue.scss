@@ -1,0 +1,22 @@
+.issue{
+    h2{
+        font-size: 36px;
+        text-align: center;
+        padding: 20px 0 20px 50px;
+    }
+    .issueContent{
+        display: flex;
+        .carousel{
+            width: 80%;
+            margin: 0 auto 50px;
+            .carousel-item{
+                > img{
+                    margin-bottom: 20px;
+                }
+            }
+            .animate__fadeInUp{
+                animation-delay: .5s;
+            }
+        }
+    }
+}
