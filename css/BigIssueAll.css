@@ -488,12 +488,20 @@ img {
   background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/03-story/Story_bg.png?raw=true);
 }
 
+.storyOfPeople .storyArticle .storyPicDescription .storyPic {
+  width: 50%;
+}
+
 .storyOfPeople .storyArticle .storyPicDescription .storyPic h3 {
   font-size: 0;
 }
 
 .storyOfPeople .storyArticle .storyPicDescription .storyPic img {
   box-shadow: 5px 5px 5px #fa0;
+}
+
+.storyOfPeople .storyArticle .storyPicDescription .picTxt {
+  width: 50%;
 }
 
 .storyOfPeople .storyArticle .storyPicDescription .picTxt p {
