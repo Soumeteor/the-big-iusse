@@ -54,6 +54,7 @@
     .storyContent{
         width: 80%;
         margin: 0 auto;
+        position: relative;
         .storyBreadCrumb{
             display: flex;
             margin-bottom: 50px;
@@ -85,9 +86,51 @@
             }
         
         }
+        .selectArea{
+            position: absolute;
+            top: 0;
+            right: 0;
+            li{
+                font-size: 0;
+            }
+            .selectMenu{
+                width: 130px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 16px;
+                padding: 5px 25px;
+                background-color: #777;
+                color: #fff;
+            }
+            .subSelectMenu{
+                width: 100%;
+                position: absolute;
+                top: 34px;
+                left: -100%;
+                opacity: 0;
+                z-index: -1;
+                a{
+                    display: block;
+                    font-size: 16px;
+                    text-align: center;
+                    padding: 5px 25px;
+                    background-color: #ccc;
+                }
+                a:hover{
+                    background-color: #aaa;
+                }
+            }
+            .selectMenu:hover > .subSelectMenu{
+                left: 0;
+                opacity: 1;
+                z-index: 1;
+                transition: .5s;
+            }
+            
+        }
     }
     .storyArticle{
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         .storyPicDescription{
             width: 90%;
@@ -126,4 +169,71 @@
             }
         }
     }
+    .allStory,
+    .northStory,
+    .centralStory,
+    .southStory,
+    .eastStory{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .allStoryList,
+    .northStory,
+    .centralStory,
+    .southStory,
+    .eastStory{
+        h2{
+            font-size: 0;
+        }
+        li{
+            display: flex;
+            justify-content: space-between;
+            background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/03-story/Story_bg.png?raw=true);
+            margin-bottom: 50px;
+        }
+        li:hover h3 span:before{
+            width: 100%;
+        }
+        .allStoryPic{
+            width: 39%;
+            box-shadow: 5px 5px 5px #fa0;
+        }
+        .allStoryTxt{
+            width: 60%;
+            position: relative;
+            padding: 10px;
+            h3{
+                padding: 20px 10px;
+                font-size: 24px;
+                position: relative;
+                z-index: 1;
+                span{
+                    position: relative;
+                }
+                span:before{
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    border-bottom: 4px solid #fa0;
+                    bottom: 0;
+                    left: 0;
+                    transition: .3s;
+                }
+            }
+            p{
+                padding: 10px;
+                font-size: 14px;
+                background-color: rgba(255, 255, 255, .5);
+            }
+            .subStoryTitle{
+                font-size: 16px;
+            }
+            .moreBtn{
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+    }
+
 }
