@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html, body {
   line-height: 1.5;
   scroll-behavior: smooth;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,6 +49,7 @@ img {
   position: sticky;
   padding-top: 50px;
   top: 0;
+  z-index: 1;
 }
 
 .allContent .asideBar h2 {
@@ -58,16 +60,55 @@ img {
   font-size: 0;
 }
 
-.allContent .asideBar .asideNavBarList li a {
+.allContent .asideBar .asideNavBarList a {
   display: block;
   font-size: 20px;
   writing-mode: vertical-rl;
   line-height: 50px;
   padding: 15px 0;
+  border-bottom: 1px solid #aaa;
+  transition: .3s;
+}
+
+.allContent .asideBar .asideNavBarList li:first-child a {
+  padding-top: 30px;
+}
+
+.allContent .asideBar .asideNavBarList span {
+  position: relative;
+}
+
+.allContent .asideBar .asideNavBarList span:before,
+.allContent .asideBar .asideNavBarList span:after {
+  content: "";
+  position: absolute;
+  height: 0;
+  transition: .3s;
+}
+
+.allContent .asideBar .asideNavBarList span:before {
+  border-left: 1px solid #fa0;
+  top: 0;
+  left: 0;
+}
+
+.allContent .asideBar .asideNavBarList span::after {
+  border-right: 1px solid #fa0;
+  right: 0;
+  bottom: 0%;
+}
+
+.allContent .asideBar .asideNavBarList a:hover {
+  color: #fa0;
+}
+
+.allContent .asideBar .asideNavBarList a:hover span:before,
+.allContent .asideBar .asideNavBarList a:hover span:after {
+  height: 100%;
 }
 
 .asideCommon {
-  width: 14%;
+  width: 7%;
   position: sticky;
   height: 100%;
   top: 50px;
@@ -102,12 +143,9 @@ img {
   border-top: 2px solid #aaa;
   top: 0;
   left: -12px;
-  transition: .3s;
-}
-
-.moreBtn a:before {
   border-bottom: 2px solid #aaa;
   bottom: 0;
+  transition: .3s;
 }
 
 .moreBtn a:after {
@@ -117,13 +155,10 @@ img {
   border-right: 2px solid #aaa;
   top: -6px;
   right: 0;
-  transition: .3s;
-}
-
-.moreBtn a:after {
   border-left: 2px solid #aaa;
   top: -11px;
   left: 0;
+  transition: .3s;
 }
 
 .moreBtn a:hover {
@@ -205,7 +240,7 @@ img {
 .issue h2 {
   font-size: 36px;
   text-align: center;
-  padding: 20px 0 20px 50px;
+  padding: 50px 0 50px 50px;
 }
 
 .issue .issueContent {
@@ -228,7 +263,7 @@ img {
 .sales h2 {
   font-size: 36px;
   text-align: center;
-  padding: 20px 0 20px 50px;
+  padding: 50px 0 50px 50px;
 }
 
 .sales .salesContent {
@@ -310,7 +345,7 @@ img {
 .about h2 {
   font-size: 36px;
   text-align: center;
-  padding: 20px 0 20px 50px;
+  padding: 50px 0 50px 50px;
 }
 
 .about .aboutContent {
@@ -318,7 +353,7 @@ img {
 }
 
 .about .aboutUs {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -437,6 +472,7 @@ img {
 .storyOfPeople .storyContent {
   width: 80%;
   margin: 0 auto;
+  position: relative;
 }
 
 .storyOfPeople .storyContent .storyBreadCrumb {
@@ -475,8 +511,56 @@ img {
   width: 100%;
 }
 
+.storyOfPeople .storyContent .selectArea {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.storyOfPeople .storyContent .selectArea li {
+  font-size: 0;
+}
+
+.storyOfPeople .storyContent .selectArea .selectMenu {
+  width: 130px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 25px;
+  background-color: #777;
+  color: #fff;
+}
+
+.storyOfPeople .storyContent .selectArea .subSelectMenu {
+  width: 100%;
+  position: absolute;
+  top: 34px;
+  left: -100%;
+  opacity: 0;
+  z-index: -1;
+}
+
+.storyOfPeople .storyContent .selectArea .subSelectMenu a {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 25px;
+  background-color: #ccc;
+}
+
+.storyOfPeople .storyContent .selectArea .subSelectMenu a:hover {
+  background-color: #aaa;
+}
+
+.storyOfPeople .storyContent .selectArea .selectMenu:hover > .subSelectMenu {
+  left: 0;
+  opacity: 1;
+  z-index: 1;
+  transition: .5s;
+}
+
 .storyOfPeople .storyArticle {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -488,12 +572,20 @@ img {
   background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/03-story/Story_bg.png?raw=true);
 }
 
+.storyOfPeople .storyArticle .storyPicDescription .storyPic {
+  width: 50%;
+}
+
 .storyOfPeople .storyArticle .storyPicDescription .storyPic h3 {
   font-size: 0;
 }
 
 .storyOfPeople .storyArticle .storyPicDescription .storyPic img {
   box-shadow: 5px 5px 5px #fa0;
+}
+
+.storyOfPeople .storyArticle .storyPicDescription .picTxt {
+  width: 50%;
 }
 
 .storyOfPeople .storyArticle .storyPicDescription .picTxt p {
@@ -511,6 +603,168 @@ img {
 .storyOfPeople .storyArticle .storyTxtContent p {
   text-indent: 2em;
   padding: 30px 50px;
+}
+
+.storyOfPeople .allStory,
+.storyOfPeople .northStory,
+.storyOfPeople .centralStory,
+.storyOfPeople .southStory,
+.storyOfPeople .eastStory {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.storyOfPeople .allStoryList h2,
+.storyOfPeople .northStory h2,
+.storyOfPeople .centralStory h2,
+.storyOfPeople .southStory h2,
+.storyOfPeople .eastStory h2 {
+  font-size: 0;
+}
+
+.storyOfPeople .allStoryList li,
+.storyOfPeople .northStory li,
+.storyOfPeople .centralStory li,
+.storyOfPeople .southStory li,
+.storyOfPeople .eastStory li {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/03-story/Story_bg.png?raw=true);
+  margin-bottom: 50px;
+}
+
+.storyOfPeople .allStoryList li:hover h3 span:before,
+.storyOfPeople .northStory li:hover h3 span:before,
+.storyOfPeople .centralStory li:hover h3 span:before,
+.storyOfPeople .southStory li:hover h3 span:before,
+.storyOfPeople .eastStory li:hover h3 span:before {
+  width: 100%;
+}
+
+.storyOfPeople .allStoryList .allStoryPic,
+.storyOfPeople .northStory .allStoryPic,
+.storyOfPeople .centralStory .allStoryPic,
+.storyOfPeople .southStory .allStoryPic,
+.storyOfPeople .eastStory .allStoryPic {
+  width: 39%;
+  box-shadow: 5px 5px 5px #fa0;
+}
+
+.storyOfPeople .allStoryList .allStoryTxt,
+.storyOfPeople .northStory .allStoryTxt,
+.storyOfPeople .centralStory .allStoryTxt,
+.storyOfPeople .southStory .allStoryTxt,
+.storyOfPeople .eastStory .allStoryTxt {
+  width: 60%;
+  position: relative;
+  padding: 10px;
+}
+
+.storyOfPeople .allStoryList .allStoryTxt h3,
+.storyOfPeople .northStory .allStoryTxt h3,
+.storyOfPeople .centralStory .allStoryTxt h3,
+.storyOfPeople .southStory .allStoryTxt h3,
+.storyOfPeople .eastStory .allStoryTxt h3 {
+  padding: 20px 10px;
+  font-size: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.storyOfPeople .allStoryList .allStoryTxt h3 span,
+.storyOfPeople .northStory .allStoryTxt h3 span,
+.storyOfPeople .centralStory .allStoryTxt h3 span,
+.storyOfPeople .southStory .allStoryTxt h3 span,
+.storyOfPeople .eastStory .allStoryTxt h3 span {
+  position: relative;
+}
+
+.storyOfPeople .allStoryList .allStoryTxt h3 span:before,
+.storyOfPeople .northStory .allStoryTxt h3 span:before,
+.storyOfPeople .centralStory .allStoryTxt h3 span:before,
+.storyOfPeople .southStory .allStoryTxt h3 span:before,
+.storyOfPeople .eastStory .allStoryTxt h3 span:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-bottom: 4px solid #fa0;
+  bottom: 0;
+  left: 0;
+  transition: .3s;
+}
+
+.storyOfPeople .allStoryList .allStoryTxt p,
+.storyOfPeople .northStory .allStoryTxt p,
+.storyOfPeople .centralStory .allStoryTxt p,
+.storyOfPeople .southStory .allStoryTxt p,
+.storyOfPeople .eastStory .allStoryTxt p {
+  padding: 10px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.storyOfPeople .allStoryList .allStoryTxt .subStoryTitle,
+.storyOfPeople .northStory .allStoryTxt .subStoryTitle,
+.storyOfPeople .centralStory .allStoryTxt .subStoryTitle,
+.storyOfPeople .southStory .allStoryTxt .subStoryTitle,
+.storyOfPeople .eastStory .allStoryTxt .subStoryTitle {
+  font-size: 16px;
+}
+
+.storyOfPeople .allStoryList .allStoryTxt .moreBtn,
+.storyOfPeople .northStory .allStoryTxt .moreBtn,
+.storyOfPeople .centralStory .allStoryTxt .moreBtn,
+.storyOfPeople .southStory .allStoryTxt .moreBtn,
+.storyOfPeople .eastStory .allStoryTxt .moreBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.support h2 {
+  font-size: 36px;
+  text-align: center;
+  padding: 20px 0 20px 50px;
+}
+
+.supportContent {
+  display: flex;
+}
+
+.supportContent .supportTxt {
+  margin-bottom: 50px;
+}
+
+.supportContent p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.supportContent .supportList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.supportContent .supportList h2 {
+  font-size: 0;
+}
+
+.supportContent .supportList li {
+  width: 30%;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.supportContent .supportList a {
+  display: block;
+  transition: .5s;
+}
+
+.supportContent .supportList a:hover {
+  transform: scale(1.1);
 }
 
 .footer .sectionContainer {
