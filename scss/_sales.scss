@@ -2,29 +2,28 @@
     h2{
         font-size: 36px;
         text-align: center;
-        padding: 50px 0 50px 50px;
+        padding: 50px 0 50px 100px;
     }
     .salesContent{
         display: flex;
         margin-bottom: 50px;
         .salesStory{
-            width: 80%;
+            width: 70%;
             margin: 0 auto;
             .salesList{
                 display: flex;
                 justify-content: space-around;
-                // margin: auto;
                 margin-bottom: 50px;
                 li{
                     width: 45%;
                     height: 100%;
-                    padding: 10px;
-                    // border: 1px solid #ccc;
+                    padding: 20px 10px;
                     text-align: center;
                     background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/sales/bg-sales.png?raw=true);
-                    img{
+                    .salesPhoto{
                         width: 90%;
-                        box-shadow: 5px 5px 5px #ccc;
+                        margin: 0 auto;
+                        box-shadow: 5px 5px 5px $img-box-shadow-color;
                     }
                     > .moreBtn{
                         padding-left: 0;
@@ -45,7 +44,7 @@
                             position: absolute;
                             width: 0;
                             height: 35%;
-                            background-color: #fa0;
+                            background-color: $hover-background-color;
                             left: 25%;
                             bottom: 10px;
                             z-index: -1;
@@ -62,6 +61,7 @@
                         p:last-child{
                             font-size: 14px;
                             text-align: left;
+                            padding-bottom: 20px;
                         }
                     }
                 }
