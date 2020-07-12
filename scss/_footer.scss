@@ -1,6 +1,6 @@
 .footer{
     .sectionContainer{
-        background-color: #fa0;
+        background-color: $footer-background-color;
         padding: 50px 0;
     }
 }
@@ -14,7 +14,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: #fff;
+        color: $txt-color;
         font-size: 14px;
         .footerSocial{
             display: flex;
@@ -36,10 +36,10 @@
 }
 .copyright{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 10px 0;
     text-align: center;
-    color: #fff;
-    background-color: #777;
+    color: $txt-color;
+    background-color: $footer-copyright;
 }
