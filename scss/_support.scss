@@ -1,0 +1,41 @@
+.support{
+    h2{
+        font-size: 36px;
+        text-align: center;
+        padding: 20px 0 20px 50px;
+    }
+}
+.supportContent{
+    display: flex;
+    
+    .supportTxt{
+        margin-bottom: 50px;
+    }
+    p{
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .supportList{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 50px;
+        h2{
+            font-size: 0;
+        }
+        li{
+            width: 30%;
+            overflow: hidden;
+            font-size: 0;
+        }
+        a{
+            display: block;
+            transition: .5s;
+        }
+        a:hover{
+            transform: scale(1.1);
+        }
+        
+    }
+}
