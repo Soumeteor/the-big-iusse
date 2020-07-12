@@ -29,7 +29,8 @@ img {
 .section {
 	padding: 50px 0;
 }
-.sectionContainer {
+.sectionContainer,
+.allContent {
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
@@ -37,10 +38,6 @@ img {
 .allContent {
 	display: flex;
 	justify-content: center;
-	.asideContent {
-		width: 100%;
-		max-width: 1150px;
-	}
 	.asideBar {
 		width: 100px;
 		height: 100%;

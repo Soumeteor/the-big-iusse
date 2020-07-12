@@ -34,7 +34,8 @@ img {
   padding: 50px 0;
 }
 
-.sectionContainer {
+.sectionContainer,
+.allContent {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -43,11 +44,6 @@ img {
 .allContent {
   display: flex;
   justify-content: center;
-}
-
-.allContent .asideContent {
-  width: 100%;
-  max-width: 1150px;
 }
 
 .allContent .asideBar {
@@ -961,6 +957,117 @@ img {
 
 .supportContent .supportList a:hover {
   transform: scale(1.1);
+}
+
+.salePoints h2 {
+  font-size: 36px;
+  text-align: center;
+  padding: 50px 0 50px 100px;
+}
+
+.salePoints .salePointsContent {
+  display: flex;
+}
+
+.salePoints .salePointsContent .saleStore {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.salePoints .salePointsContent .saleStoreMaps {
+  margin-bottom: 50px;
+}
+
+.salePoints .salePointsContent .saleStoreTxt {
+  margin-bottom: 50px;
+}
+
+.salePoints .salePointsContent .saleStoreTxt p {
+  text-align: center;
+}
+
+.salePoints .salePointsContent .saleGoogleMap {
+  width: 100%;
+}
+
+.salePoints .salePointsContent .saleGoogleMap iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.fixedPoints {
+  padding: 50px 0;
+}
+
+.fixedPoints h2 {
+  padding-left: 0;
+}
+
+.fixedPoints .fixedPointTxt {
+  margin-bottom: 50px;
+}
+
+.fixedPoints .fixedPointTxt p {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.fixedPoints .taiwanAreas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fixedPoints .taiwanAreas .mapsDetail {
+  width: 43%;
+}
+
+.fixedPoints .taiwanAreas .content-group {
+  width: 50%;
+}
+
+.fixedPoints .taiwanAreas .areaMap {
+  display: none;
+  position: relative;
+}
+
+.fixedPoints .taiwanAreas .areaMap.mapOn {
+  display: block;
+}
+
+.fixedPoints .taiwanAreas .northArea img:last-child,
+.fixedPoints .taiwanAreas .westArea img:last-child,
+.fixedPoints .taiwanAreas .southArea img:last-child,
+.fixedPoints .taiwanAreas .eastArea img:last-child {
+  position: relative;
+  z-index: 2;
+}
+
+.fixedPoints .taiwanAreas .northArea img:first-child,
+.fixedPoints .taiwanAreas .westArea img:first-child,
+.fixedPoints .taiwanAreas .southArea img:first-child,
+.fixedPoints .taiwanAreas .eastArea img:first-child {
+  position: absolute;
+}
+
+.fixedPoints .taiwanAreas .northArea img:first-child {
+  top: 0;
+  left: -50%;
+}
+
+.fixedPoints .taiwanAreas .westArea img:first-child {
+  top: 35%;
+  left: -70%;
+}
+
+.fixedPoints .taiwanAreas .southArea img:first-child {
+  top: 70%;
+  left: -80%;
+}
+
+.fixedPoints .taiwanAreas .eastArea img:first-child {
+  top: 50%;
+  left: -45%;
 }
 
 .footer .sectionContainer {
