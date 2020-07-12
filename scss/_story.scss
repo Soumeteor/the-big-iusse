@@ -24,20 +24,20 @@
             a{
                 display: block;
                 font-size: 16px;
-                padding: 30px 10px 30px 0;
+                padding: 30px 0;
                 transition: .3s;
                 position: relative;
             }
             a:before{
                 content: "";
                 position: absolute;
-                width: 70%;
-                border-bottom: 1px solid #aaa;
+                width: 80%;
+                border-bottom: 1px solid $border-color;
                 right: 0;
                 bottom: 25px;
             }
             a:hover{
-                color: #fa0;
+                color: $hover-border-color;
             }
 
         }
@@ -47,12 +47,12 @@
         position: absolute;
         height: 130%;
         border-right: 1px solid #dbdbdc;
-        right: 1px;
+        right: -7px;
         top: -25%;
         z-index: -1;
     }
     .storyContent{
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         position: relative;
         .storyBreadCrumb{
@@ -89,7 +89,8 @@
         .selectArea{
             position: absolute;
             top: 0;
-            right: 0;
+            right: -10px;
+            z-index: 1;
             li{
                 font-size: 0;
             }
@@ -100,7 +101,7 @@
                 font-size: 16px;
                 padding: 5px 25px;
                 background-color: #777;
-                color: #fff;
+                color: $txt-color;
             }
             .subSelectMenu{
                 width: 100%;
@@ -108,7 +109,7 @@
                 top: 34px;
                 left: -100%;
                 opacity: 0;
-                z-index: -1;
+                z-index: 1;
                 a{
                     display: block;
                     font-size: 16px;
@@ -123,7 +124,7 @@
             .selectMenu:hover > .subSelectMenu{
                 left: 0;
                 opacity: 1;
-                z-index: 1;
+                z-index: 2;
                 transition: .5s;
             }
             
@@ -174,7 +175,7 @@
     .centralStory,
     .southStory,
     .eastStory{
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
     .allStoryList,
