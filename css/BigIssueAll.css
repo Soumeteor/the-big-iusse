@@ -125,7 +125,11 @@ img {
 }
 
 .asideCommon {
+<<<<<<< HEAD
   width: 100px;
+=======
+  width: 7%;
+>>>>>>> 34798663b5aa04c3a7e3e47c2d35556db4e0780e
   position: sticky;
   height: 100%;
   top: 50px;
