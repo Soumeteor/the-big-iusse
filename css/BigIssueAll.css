@@ -125,11 +125,7 @@ img {
 }
 
 .asideCommon {
-<<<<<<< HEAD
   width: 100px;
-=======
-  width: 7%;
->>>>>>> 34798663b5aa04c3a7e3e47c2d35556db4e0780e
   position: sticky;
   height: 100%;
   top: 50px;
@@ -445,22 +441,32 @@ img {
   bottom: 20px;
 }
 
-.storyOfPeople {
+.storyOfPeople,
+.magazines {
   display: flex;
 }
 
-.storyOfPeople .storyAisdeMenu {
+.storyOfPeople .storyAisdeMenu,
+.storyOfPeople .magazineAisdeMenu,
+.magazines .storyAisdeMenu,
+.magazines .magazineAisdeMenu {
   padding: 100px 0;
   position: relative;
 }
 
-.storyOfPeople .storyAisdeMenu li {
+.storyOfPeople .storyAisdeMenu li,
+.storyOfPeople .magazineAisdeMenu li,
+.magazines .storyAisdeMenu li,
+.magazines .magazineAisdeMenu li {
   font-size: 0;
   text-align: right;
   position: relative;
 }
 
-.storyOfPeople .storyAisdeMenu li a {
+.storyOfPeople .storyAisdeMenu li a,
+.storyOfPeople .magazineAisdeMenu li a,
+.magazines .storyAisdeMenu li a,
+.magazines .magazineAisdeMenu li a {
   display: block;
   font-size: 16px;
   padding: 30px 0;
@@ -468,7 +474,10 @@ img {
   position: relative;
 }
 
-.storyOfPeople .storyAisdeMenu li a:before {
+.storyOfPeople .storyAisdeMenu li a:before,
+.storyOfPeople .magazineAisdeMenu li a:before,
+.magazines .storyAisdeMenu li a:before,
+.magazines .magazineAisdeMenu li a:before {
   content: "";
   position: absolute;
   width: 80%;
@@ -477,11 +486,17 @@ img {
   bottom: 25px;
 }
 
-.storyOfPeople .storyAisdeMenu li a:hover {
+.storyOfPeople .storyAisdeMenu li a:hover,
+.storyOfPeople .magazineAisdeMenu li a:hover,
+.magazines .storyAisdeMenu li a:hover,
+.magazines .magazineAisdeMenu li a:hover {
   color: #ff8729;
 }
 
-.storyOfPeople .storyAisdeMenu:before {
+.storyOfPeople .magazineAisdeMenu:before,
+.storyOfPeople .storyAisdeMenu:before,
+.magazines .magazineAisdeMenu:before,
+.magazines .storyAisdeMenu:before {
   content: "";
   position: absolute;
   height: 130%;
@@ -491,34 +506,60 @@ img {
   z-index: -1;
 }
 
-.storyOfPeople .storyContent {
+.storyOfPeople .magazineAisdeMenu:before,
+.magazines .magazineAisdeMenu:before {
+  right: -9px;
+}
+
+.storyOfPeople .storyContent,
+.storyOfPeople .magazineContent,
+.magazines .storyContent,
+.magazines .magazineContent {
   width: 90%;
   margin: 0 auto;
   position: relative;
 }
 
-.storyOfPeople .storyContent .storyBreadCrumb {
+.storyOfPeople .storyBreadCrumb,
+.storyOfPeople .magazineBreadCrumb,
+.magazines .storyBreadCrumb,
+.magazines .magazineBreadCrumb {
   display: flex;
   margin-bottom: 50px;
 }
 
-.storyOfPeople .storyContent .storyBreadCrumb li {
+.storyOfPeople .storyBreadCrumb li,
+.storyOfPeople .magazineBreadCrumb li,
+.magazines .storyBreadCrumb li,
+.magazines .magazineBreadCrumb li {
   font-size: 0;
 }
 
-.storyOfPeople .storyContent .storyBreadCrumb a,
-.storyOfPeople .storyContent .storyBreadCrumb .fas {
+.storyOfPeople .storyBreadCrumb a,
+.storyOfPeople .storyBreadCrumb .fas,
+.storyOfPeople .magazineBreadCrumb a,
+.storyOfPeople .magazineBreadCrumb .fas,
+.magazines .storyBreadCrumb a,
+.magazines .storyBreadCrumb .fas,
+.magazines .magazineBreadCrumb a,
+.magazines .magazineBreadCrumb .fas {
   display: block;
   font-size: 16px;
   line-height: 24px;
   padding: 0 15px;
 }
 
-.storyOfPeople .storyContent .storyBreadCrumb span {
+.storyOfPeople .storyBreadCrumb span,
+.storyOfPeople .magazineBreadCrumb span,
+.magazines .storyBreadCrumb span,
+.magazines .magazineBreadCrumb span {
   position: relative;
 }
 
-.storyOfPeople .storyContent .storyBreadCrumb span:before {
+.storyOfPeople .storyBreadCrumb span:before,
+.storyOfPeople .magazineBreadCrumb span:before,
+.magazines .storyBreadCrumb span:before,
+.magazines .magazineBreadCrumb span:before {
   content: "";
   position: absolute;
   width: 0;
@@ -529,22 +570,34 @@ img {
   transition: width .3s;
 }
 
-.storyOfPeople .storyContent .storyBreadCrumb a:hover > span:before {
+.storyOfPeople .storyBreadCrumb a:hover > span:before,
+.storyOfPeople .magazineBreadCrumb a:hover > span:before,
+.magazines .storyBreadCrumb a:hover > span:before,
+.magazines .magazineBreadCrumb a:hover > span:before {
   width: 100%;
 }
 
-.storyOfPeople .storyContent .selectArea {
+.storyOfPeople .selectArea,
+.storyOfPeople .selectYears,
+.magazines .selectArea,
+.magazines .selectYears {
   position: absolute;
   top: 0;
   right: -10px;
   z-index: 1;
 }
 
-.storyOfPeople .storyContent .selectArea li {
+.storyOfPeople .selectArea li,
+.storyOfPeople .selectYears li,
+.magazines .selectArea li,
+.magazines .selectYears li {
   font-size: 0;
 }
 
-.storyOfPeople .storyContent .selectArea .selectMenu {
+.storyOfPeople .selectArea .selectMenu,
+.storyOfPeople .selectYears .selectMenu,
+.magazines .selectArea .selectMenu,
+.magazines .selectYears .selectMenu {
   width: 130px;
   text-align: center;
   cursor: pointer;
@@ -554,7 +607,10 @@ img {
   color: #fff;
 }
 
-.storyOfPeople .storyContent .selectArea .subSelectMenu {
+.storyOfPeople .selectArea .subSelectMenu,
+.storyOfPeople .selectYears .subSelectMenu,
+.magazines .selectArea .subSelectMenu,
+.magazines .selectYears .subSelectMenu {
   width: 100%;
   position: absolute;
   top: 34px;
@@ -563,7 +619,10 @@ img {
   z-index: 1;
 }
 
-.storyOfPeople .storyContent .selectArea .subSelectMenu a {
+.storyOfPeople .selectArea .subSelectMenu a,
+.storyOfPeople .selectYears .subSelectMenu a,
+.magazines .selectArea .subSelectMenu a,
+.magazines .selectYears .subSelectMenu a {
   display: block;
   font-size: 16px;
   text-align: center;
@@ -571,23 +630,31 @@ img {
   background-color: #ccc;
 }
 
-.storyOfPeople .storyContent .selectArea .subSelectMenu a:hover {
+.storyOfPeople .selectArea .subSelectMenu a:hover,
+.storyOfPeople .selectYears .subSelectMenu a:hover,
+.magazines .selectArea .subSelectMenu a:hover,
+.magazines .selectYears .subSelectMenu a:hover {
   background-color: #aaa;
 }
 
-.storyOfPeople .storyContent .selectArea .selectMenu:hover > .subSelectMenu {
+.storyOfPeople .selectArea .selectMenu:hover > .subSelectMenu,
+.storyOfPeople .selectYears .selectMenu:hover > .subSelectMenu,
+.magazines .selectArea .selectMenu:hover > .subSelectMenu,
+.magazines .selectYears .selectMenu:hover > .subSelectMenu {
   left: 0;
   opacity: 1;
   z-index: 2;
   transition: .5s;
 }
 
-.storyOfPeople .storyArticle {
+.storyOfPeople .storyArticle,
+.magazines .storyArticle {
   width: 80%;
   margin: 0 auto;
 }
 
-.storyOfPeople .storyArticle .storyPicDescription {
+.storyOfPeople .storyArticle .storyPicDescription,
+.magazines .storyArticle .storyPicDescription {
   width: 90%;
   margin: 0 auto 50px auto;
   display: flex;
@@ -595,35 +662,42 @@ img {
   background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/03-story/Story_bg.png?raw=true);
 }
 
-.storyOfPeople .storyArticle .storyPicDescription .storyPic {
+.storyOfPeople .storyArticle .storyPicDescription .storyPic,
+.magazines .storyArticle .storyPicDescription .storyPic {
   width: 50%;
 }
 
-.storyOfPeople .storyArticle .storyPicDescription .storyPic h3 {
+.storyOfPeople .storyArticle .storyPicDescription .storyPic h3,
+.magazines .storyArticle .storyPicDescription .storyPic h3 {
   font-size: 0;
 }
 
-.storyOfPeople .storyArticle .storyPicDescription .storyPic img {
+.storyOfPeople .storyArticle .storyPicDescription .storyPic img,
+.magazines .storyArticle .storyPicDescription .storyPic img {
   box-shadow: 5px 5px 5px #fa0;
 }
 
-.storyOfPeople .storyArticle .storyPicDescription .picTxt {
+.storyOfPeople .storyArticle .storyPicDescription .picTxt,
+.magazines .storyArticle .storyPicDescription .picTxt {
   width: 50%;
 }
 
-.storyOfPeople .storyArticle .storyPicDescription .picTxt p {
+.storyOfPeople .storyArticle .storyPicDescription .picTxt p,
+.magazines .storyArticle .storyPicDescription .picTxt p {
   width: 90%;
   margin: 0 auto;
   padding: 20px;
   background-color: rgba(245, 243, 242, 0.5);
 }
 
-.storyOfPeople .storyArticle .storyPicDescription .picTxt .salesName {
+.storyOfPeople .storyArticle .storyPicDescription .picTxt .salesName,
+.magazines .storyArticle .storyPicDescription .picTxt .salesName {
   padding-top: 0;
   text-align: right;
 }
 
-.storyOfPeople .storyArticle .storyTxtContent p {
+.storyOfPeople .storyArticle .storyTxtContent p,
+.magazines .storyArticle .storyTxtContent p {
   text-indent: 2em;
   padding: 30px 50px;
 }
@@ -632,7 +706,14 @@ img {
 .storyOfPeople .northStory,
 .storyOfPeople .centralStory,
 .storyOfPeople .southStory,
-.storyOfPeople .eastStory {
+.storyOfPeople .eastStory,
+.storyOfPeople .allMagazine,
+.magazines .allStory,
+.magazines .northStory,
+.magazines .centralStory,
+.magazines .southStory,
+.magazines .eastStory,
+.magazines .allMagazine {
   width: 80%;
   margin: 0 auto;
 }
@@ -641,7 +722,12 @@ img {
 .storyOfPeople .northStory h2,
 .storyOfPeople .centralStory h2,
 .storyOfPeople .southStory h2,
-.storyOfPeople .eastStory h2 {
+.storyOfPeople .eastStory h2,
+.magazines .allStoryList h2,
+.magazines .northStory h2,
+.magazines .centralStory h2,
+.magazines .southStory h2,
+.magazines .eastStory h2 {
   font-size: 0;
 }
 
@@ -649,7 +735,12 @@ img {
 .storyOfPeople .northStory li,
 .storyOfPeople .centralStory li,
 .storyOfPeople .southStory li,
-.storyOfPeople .eastStory li {
+.storyOfPeople .eastStory li,
+.magazines .allStoryList li,
+.magazines .northStory li,
+.magazines .centralStory li,
+.magazines .southStory li,
+.magazines .eastStory li {
   display: flex;
   justify-content: space-between;
   background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/03-story/Story_bg.png?raw=true);
@@ -660,7 +751,12 @@ img {
 .storyOfPeople .northStory li:hover h3 span:before,
 .storyOfPeople .centralStory li:hover h3 span:before,
 .storyOfPeople .southStory li:hover h3 span:before,
-.storyOfPeople .eastStory li:hover h3 span:before {
+.storyOfPeople .eastStory li:hover h3 span:before,
+.magazines .allStoryList li:hover h3 span:before,
+.magazines .northStory li:hover h3 span:before,
+.magazines .centralStory li:hover h3 span:before,
+.magazines .southStory li:hover h3 span:before,
+.magazines .eastStory li:hover h3 span:before {
   width: 100%;
 }
 
@@ -668,7 +764,12 @@ img {
 .storyOfPeople .northStory .allStoryPic,
 .storyOfPeople .centralStory .allStoryPic,
 .storyOfPeople .southStory .allStoryPic,
-.storyOfPeople .eastStory .allStoryPic {
+.storyOfPeople .eastStory .allStoryPic,
+.magazines .allStoryList .allStoryPic,
+.magazines .northStory .allStoryPic,
+.magazines .centralStory .allStoryPic,
+.magazines .southStory .allStoryPic,
+.magazines .eastStory .allStoryPic {
   width: 39%;
   box-shadow: 5px 5px 5px #fa0;
 }
@@ -677,7 +778,12 @@ img {
 .storyOfPeople .northStory .allStoryTxt,
 .storyOfPeople .centralStory .allStoryTxt,
 .storyOfPeople .southStory .allStoryTxt,
-.storyOfPeople .eastStory .allStoryTxt {
+.storyOfPeople .eastStory .allStoryTxt,
+.magazines .allStoryList .allStoryTxt,
+.magazines .northStory .allStoryTxt,
+.magazines .centralStory .allStoryTxt,
+.magazines .southStory .allStoryTxt,
+.magazines .eastStory .allStoryTxt {
   width: 60%;
   position: relative;
   padding: 10px;
@@ -687,7 +793,12 @@ img {
 .storyOfPeople .northStory .allStoryTxt h3,
 .storyOfPeople .centralStory .allStoryTxt h3,
 .storyOfPeople .southStory .allStoryTxt h3,
-.storyOfPeople .eastStory .allStoryTxt h3 {
+.storyOfPeople .eastStory .allStoryTxt h3,
+.magazines .allStoryList .allStoryTxt h3,
+.magazines .northStory .allStoryTxt h3,
+.magazines .centralStory .allStoryTxt h3,
+.magazines .southStory .allStoryTxt h3,
+.magazines .eastStory .allStoryTxt h3 {
   padding: 20px 10px;
   font-size: 24px;
   position: relative;
@@ -698,7 +809,12 @@ img {
 .storyOfPeople .northStory .allStoryTxt h3 span,
 .storyOfPeople .centralStory .allStoryTxt h3 span,
 .storyOfPeople .southStory .allStoryTxt h3 span,
-.storyOfPeople .eastStory .allStoryTxt h3 span {
+.storyOfPeople .eastStory .allStoryTxt h3 span,
+.magazines .allStoryList .allStoryTxt h3 span,
+.magazines .northStory .allStoryTxt h3 span,
+.magazines .centralStory .allStoryTxt h3 span,
+.magazines .southStory .allStoryTxt h3 span,
+.magazines .eastStory .allStoryTxt h3 span {
   position: relative;
 }
 
@@ -706,7 +822,12 @@ img {
 .storyOfPeople .northStory .allStoryTxt h3 span:before,
 .storyOfPeople .centralStory .allStoryTxt h3 span:before,
 .storyOfPeople .southStory .allStoryTxt h3 span:before,
-.storyOfPeople .eastStory .allStoryTxt h3 span:before {
+.storyOfPeople .eastStory .allStoryTxt h3 span:before,
+.magazines .allStoryList .allStoryTxt h3 span:before,
+.magazines .northStory .allStoryTxt h3 span:before,
+.magazines .centralStory .allStoryTxt h3 span:before,
+.magazines .southStory .allStoryTxt h3 span:before,
+.magazines .eastStory .allStoryTxt h3 span:before {
   content: "";
   position: absolute;
   width: 0;
@@ -720,7 +841,12 @@ img {
 .storyOfPeople .northStory .allStoryTxt p,
 .storyOfPeople .centralStory .allStoryTxt p,
 .storyOfPeople .southStory .allStoryTxt p,
-.storyOfPeople .eastStory .allStoryTxt p {
+.storyOfPeople .eastStory .allStoryTxt p,
+.magazines .allStoryList .allStoryTxt p,
+.magazines .northStory .allStoryTxt p,
+.magazines .centralStory .allStoryTxt p,
+.magazines .southStory .allStoryTxt p,
+.magazines .eastStory .allStoryTxt p {
   padding: 10px;
   font-size: 14px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -730,7 +856,12 @@ img {
 .storyOfPeople .northStory .allStoryTxt .subStoryTitle,
 .storyOfPeople .centralStory .allStoryTxt .subStoryTitle,
 .storyOfPeople .southStory .allStoryTxt .subStoryTitle,
-.storyOfPeople .eastStory .allStoryTxt .subStoryTitle {
+.storyOfPeople .eastStory .allStoryTxt .subStoryTitle,
+.magazines .allStoryList .allStoryTxt .subStoryTitle,
+.magazines .northStory .allStoryTxt .subStoryTitle,
+.magazines .centralStory .allStoryTxt .subStoryTitle,
+.magazines .southStory .allStoryTxt .subStoryTitle,
+.magazines .eastStory .allStoryTxt .subStoryTitle {
   font-size: 16px;
 }
 
@@ -738,10 +869,46 @@ img {
 .storyOfPeople .northStory .allStoryTxt .moreBtn,
 .storyOfPeople .centralStory .allStoryTxt .moreBtn,
 .storyOfPeople .southStory .allStoryTxt .moreBtn,
-.storyOfPeople .eastStory .allStoryTxt .moreBtn {
+.storyOfPeople .eastStory .allStoryTxt .moreBtn,
+.magazines .allStoryList .allStoryTxt .moreBtn,
+.magazines .northStory .allStoryTxt .moreBtn,
+.magazines .centralStory .allStoryTxt .moreBtn,
+.magazines .southStory .allStoryTxt .moreBtn,
+.magazines .eastStory .allStoryTxt .moreBtn {
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+.storyOfPeople .allMagazineList,
+.magazines .allMagazineList {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.storyOfPeople .allMagazineList h2,
+.magazines .allMagazineList h2 {
+  font-size: 0;
+}
+
+.storyOfPeople .allMagazineList li,
+.magazines .allMagazineList li {
+  width: 31%;
+}
+
+.storyOfPeople .allMagazineList li .magazinePic,
+.magazines .allMagazineList li .magazinePic {
+  margin-bottom: 30px;
+}
+
+.storyOfPeople .allMagazineList li > .moreBtn,
+.magazines .allMagazineList li > .moreBtn {
+  padding: 0;
+}
+
+.supportBanner h2 {
+  font-size: 0;
 }
 
 .support h2 {
@@ -789,6 +956,7 @@ img {
 .supportContent .supportList a {
   display: block;
   transition: .5s;
+  box-shadow: 5px 5px 5px #ccc;
 }
 
 .supportContent .supportList a:hover {

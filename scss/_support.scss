@@ -1,3 +1,8 @@
+.supportBanner{
+    h2{
+        font-size: 0;
+    }
+}
 .support{
     h2{
         font-size: 36px;
@@ -36,6 +41,7 @@
         a{
             display: block;
             transition: .5s;
+            box-shadow: 5px 5px 5px $img-box-shadow-color;
         }
         a:hover{
             transform: scale(1.1);
