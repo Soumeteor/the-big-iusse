@@ -18,6 +18,11 @@ h6 {
 * {
   box-sizing: border-box;
 }
+*:focus { 
+  outline-color: white;
+  outline-width: 0.1px;
+
+}
 
 a,
 a:hover {
