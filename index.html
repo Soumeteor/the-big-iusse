@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="css/BigIssueAll.min.css">
-
+    
 </head>
 <body>
 
@@ -32,30 +32,54 @@
     <header class="header">
         <h1>The Big Issue Taiwan</h1>
         <div class="sectionContainer">
-            <div class="headerBar tabletMobileBar">
-                <div class="logo">
-                    <img src="" alt="Big Issue Logo">
-                </div>
-                <nav>
+            <div class="mobileDevice">
+                <input class="headerMenu" type="checkbox" name="" id="headerMenuCtrl">
+                <div class="mobileNavBar">
+                <!-- NavBar fixed, 注意下方需要空間 -->
+                    <div class="logo">
+                        <img class="menuOpenLogo" src="material/logo/LOGO-wt.svg" alt="Big Issue Logo">
+                    </div>
+                </div> 
+                <label class="menuCtrl" for="headerMenuCtrl">Menu</label>
+                <div class="mobileDivider"></div>
+                <nav class="navWrap">
                     <h2>Navigation</h2>
-                    <ul class="navBarList">
-                        <li><a href="#issueId"></a></li>
-                        <li><a href="#salesId"></a></li>
-                        <li><a href="#aboutId"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                    <ul class="mobileNavBarList">
+                        <li><a href="#issueId"><span>各期雜誌</span></a></li>
+                        <li><a href="#salesId"><span>銷售群像</span></a></li>
+                        <li><a href="#aboutId"><span>關於大誌</span></a></li>
+                        <li><a href="#supportId"><span>訂閱支持</span></a></li>
+                        <li><a href="#salePointsId"><span>販售場所</span></a></li>
+                        <li class="menuIcon">
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
+                <div class="mobileHeaderBanner">
+                    <div class="mobileImpression animate__animated animate__fadeInRight">
+                        <img src="material/02-PAD/00-banner/banner.svg" alt="">
+                    </div>
+                    <div class="mobileBigLogo animate__animated animate__slideInDown">
+                        <img src="material/02-PAD/00-banner/logo.svg" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="headerBanner">
+            <div class="pcHeaderBanner">
                 <div class="impression animate__animated animate__fadeInLeft">
-                    <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/9296840f46f38487e9dd36fd6c496e7f7225be6d/material/01-PC/00-banner/banner%202.svg">
+                    <img src="material/01-PC/00-banner/banner.svg">
                 </div>
                 <div class="bannerTxt">
                     <div class="logo animate__animated animate__slideInDown">
-                        <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/9296840f46f38487e9dd36fd6c496e7f7225be6d/material/01-PC/00-banner/LOGO%202.svg" alt="Big Issue">
+                        <img src="material/01-PC/00-banner/LOGO.svg" alt="Big Issue">
                     </div>
-                    <!-- <p>Helping people helping themsevles</p> -->
                 </div>
             </div>
         </div>
@@ -70,38 +94,44 @@
                     <h2>各期雜誌</h2>
                     <div class="issueContent">
                         <div class="asideCommon">
-                            <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/logo/Side_title_01.png?raw=true" alt="Aside Title">
+                            <img src="material/logo/Side_title_01.png" alt="Aside Title">
                         </div>
                         <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-interval="4000">
-                                    <img class="showLightBox" src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/magazine/Mag_2020_07.png" class="d-block w-100" alt="...">
-                                    <div class="animate__animated animate__fadeInUp">
-                                        <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/a0821f420283be6d9ddb6181ad381f483712e7a2/material/magazine/section_01_Magzine_main_txt_PC-7.svg">
+                                    <img class="showLightBox" src="material/magazine/Mag_2020_06_A.jpeg" class="d-block w-100" alt="...">
+                                    <div class="pcCarousel animate__animated animate__fadeInUp">
+                                        <img src="material/magazine/section_01_Magzine_main_txt_PC-6.svg">
                                     </div>
-                                </div>
-                                <div class="carousel-item " data-interval="4000">
-                                    <img class="showLightBox" src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/magazine/Mag_2020_06.jpeg?raw=true" class="d-block w-100" alt="...">
-                                    <div class="animate__animated animate__fadeInUp">
-                                        <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/9296840f46f38487e9dd36fd6c496e7f7225be6d/material/magazine/section_01_Magzine_main_txt_PC-6.svg">
+                                    <div class="mobileCarousel animate__animated animate__fadeInUp">
+                                        <img src="material/magazine/section_01_Magzine_main_txt_PAD-6.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-interval="4000">
-                                    <img class="showLightBox" src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/magazine/Mag_2020_05.jpeg?raw=true" class="d-block w-100" alt="...">
-                                    <div class="animate__animated animate__fadeInUp">
-                                        <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/9296840f46f38487e9dd36fd6c496e7f7225be6d/material/magazine/section_01_Magzine_main_txt_PC-5.svg">
+                                    <img class="showLightBox" src="material/magazine/Mag_2020_05.jpeg" class="d-block w-100" alt="...">
+                                    <div class="pcCarousel animate__animated animate__fadeInUp">
+                                        <img src="material/magazine/section_01_Magzine_main_txt_PC-5.svg">
+                                    </div>
+                                    <div class="mobileCarousel animate__animated animate__fadeInUp">
+                                        <img src="material/magazine/section_01_Magzine_main_txt_PAD-5.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-interval="4000">
-                                    <img class="showLightBox" src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/magazine/Mag_2020_04.jpeg?raw=true" class="d-block w-100" alt="...">
-                                    <div class="animate__animated animate__fadeInUp">
-                                        <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/9296840f46f38487e9dd36fd6c496e7f7225be6d/material/magazine/section_01_Magzine_main_txt_PC-4.svg">
+                                    <img class="showLightBox" src="material/magazine/Mag_2020_04.jpeg" class="d-block w-100" alt="...">
+                                    <div class="pcCarousel animate__animated animate__fadeInUp">
+                                        <img src="material/magazine/section_01_Magzine_main_txt_PC-4.svg">
+                                    </div>
+                                    <div class="mobileCarousel animate__animated animate__fadeInUp">
+                                        <img src="material/magazine/section_01_Magzine_main_txt_PAD-4.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-interval="4000">
-                                    <img class="showLightBox" src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/magazine/Mag_2020_03.jpeg?raw=true" class="d-block w-100" alt="...">
-                                    <div class="animate__animated animate__fadeInUp">
-                                        <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/9296840f46f38487e9dd36fd6c496e7f7225be6d/material/magazine/section_01_Magzine_main_txt_PC-3.svg">
+                                    <img class="showLightBox" src="material/magazine/Mag_2020_03.jpeg" class="d-block w-100" alt="...">
+                                    <div class="pcCarousel animate__animated animate__fadeInUp">
+                                        <img src="material/magazine/section_01_Magzine_main_txt_PC-3.svg">
+                                    </div>
+                                    <div class="mobileCarousel animate__animated animate__fadeInUp">
+                                        <img src="material/magazine/section_01_Magzine_main_txt_PAD-3.svg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +186,7 @@
                         </ol>
                     </div> -->
                     <button class="moreBtn">
-                        <a href="all_magazine.html">瀏覽更多雜誌</a>
+                        <a href="all_magazine.html">預覽更多雜誌</a>
                     </button>
                 </section>
 
@@ -166,13 +196,13 @@
                     <h2>銷售員群像</h2>
                     <div class="salesContent">
                         <div class="asideCommon">
-                            <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/logo/Side_title_02.png?raw=true" alt="Aside Title">
+                            <img src="material/01-PC/02-sales/s2SideTitle.svg">
                         </div>
                         <div class="salesStory">
                             <ul class="salesList">
                                 <li>
                                     <div class="salesPhoto">
-                                        <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/sales/sales_01.png?raw=true" alt="">
+                                        <img src="material/sales/sales_01.png" alt="">
                                     </div>
                                     <div class="storyTxt">
                                         <h3>台北捷運圓山站</h3>
@@ -180,76 +210,76 @@
                                         <p>秋燕因從小患有腦性麻痺，所以外出都需要靠電動輪椅代步。以前完全沒有做過任何工作，她說自己試圖找過許多工作，但都沒公司要聘雇她，因為都是要熟悉電腦文書作業或是四肢健全的清潔工作，這些看似最基本的能力要求，對秋燕來說卻是難如登天……</p>
                                     </div>
                                     <button class="moreBtn">
-                                        <a href="story_TaipeiYuanshan.html">Read More</a>
+                                        <a href="story_allArea.html">Read More</a>
                                     </button>
                                 </li>
                                 <li>
                                     <div class="salesPhoto">
-                                        <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/sales/sales_02_a.png?raw=true" alt="">
+                                        <img src="material/sales/sales_02_a.png" alt="">
                                     </div>
                                     <div class="storyTxt">
                                         <h3>台北捷運龍山寺站</h3>
-                                        <p>「有一天去萬華社會局時，在電梯裡看到大誌雜誌的說明會傳單，就想說去試試看好了，不然也一大把年紀了，很難找到工作啊！」</p>
+                                        <p>「有天去萬華社會局時，在電梯裡看到大誌的說明會傳單，就想說去試試看，不然也一大把年紀了，很難找到工作啊！」</p>
                                         <p>最早以前，邱伯伯的第一份工作是在電器行，邊賣電器兼維修，後來就換到西藥原料工廠當員工，工廠之後遷到桃園工作，藥廠的工作一待就十五年了。邱伯伯在六十歲以前辦理提前退休，因為好像身體開始會對藥粉過敏，感覺對身體不好，所以決定退休……</p>
                                     </div>
                                     <button class="moreBtn">
-                                        <a href="story_TaipeiLongshanTemple.html">Read More</a>
+                                        <a href="story_allArea.html">Read More</a>
                                     </button>
                                 </li>
                             </ul>
                             <ul class="salesList">
                                 <li>
                                     <div class="salesPhoto">
-                                        <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/sales/sales_03.png?raw=true" alt="">
+                                        <img src="material/sales/sales_03.png" alt="">
                                     </div>
                                     <div class="storyTxt">
                                         <h3>台北捷運臺大醫院站</h3>
-                                        <p>「當初會來賣雜誌是因為在台大醫院這裡遇到一位販售員，我當時在附近賣玉蘭花，然後看他賣得很不錯，就問他要怎麼做這份工作。」</p>
+                                        <p>「當初會賣雜誌是因為在台大醫院這裡遇到一位販售員，我當時在附近賣玉蘭花，看他賣得很不錯，就問他要怎麼做這份工作。」</p>
                                         <p>在投入賣雜誌之前，高姐遇到販售員子承，子承就帶她到雜誌社初步瞭解工作內容，高姐就這樣開始從賣玉蘭花變成賣雜誌。平常早上除了賣玉蘭花，下午又多了一份賣雜誌的工作，這樣一來生活的收入開始有明顯的改善，之前僅靠賣玉蘭花，對高姐來說相當微薄……</p>
                                     </div>
                                     <button class="moreBtn">
-                                        <a href="story_TaipeiNTUH.html">Read More</a>
+                                        <a href="story_allArea.html">Read More</a>
                                     </button>
                                 </li>
                                 <li>
                                     <div class="salesPhoto">
-                                        <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/sales/sales_04.png?raw=true" alt="">
+                                        <img src="material/sales/sales_04.png" alt="">
                                     </div>
                                     <div class="storyTxt">
                                         <h3>新竹火車站</h3>
-                                        <p>「目前我是住在康復之家，有護理師和社工師的輔導與協助，自己的狀態慢慢趨於穩定。但我還是很希望能早日康復並回歸職場工作。」</p>
+                                        <p>「目前我住在康復之家，有護理師和社工師的輔導與協助，狀態慢慢趨於穩定。但我還是很希望能早日康復並回歸職場工作。」</p>
                                         <p>麗秋在旅遊業工作了十年之後，帶團出國真的很辛苦，身體要能應付時差的疲倦感，又要處理旅客的各種疑難雜症。後來，轉換跑道去美語補習班當美語老師，服務了一段時間，同時也在這時間點上，麗秋開始有失眠症狀，這症狀也逐日影響到她的教學工作⋯⋯</p>
                                     </div>
                                     <button class="moreBtn">
-                                        <a href="story_ HsinchuTrainStation.html">Read More</a>
+                                        <a href="story_allArea.html">Read More</a>
                                     </button>
                                 </li>
                             </ul>
                             <ul class="salesList">
                                 <li>
                                     <div class="salesPhoto">
-                                        <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/sales/sales_05.png?raw=true" alt="">
+                                        <img src="material/sales/sales_05.png" alt="">
                                     </div>
                                     <div class="storyTxt">
                                         <h3>台中勤美誠品</h3>
-                                        <p>「當時手術完真的很痛苦。有一天，就請護士小姐推我到戶外，抽完第五根菸，我就又乖乖回去做復健，日子總還是要過下去。」</p>
-                                        <p>因為一場從三樓墜落的工安意外導致陳大哥脊椎粉碎性骨折，目前仍在努力復健中，人生雖遭逢如此劇變，但陳大哥還是很樂觀的面對一切。手術後每天坐也坐不好，躺也躺不好。但是，脊椎損傷的關係，有很多工作都無法勝任……</p>
+                                        <p>「當時手術完真的很痛苦。有一天，請護士小姐推我到戶外，抽完第五根菸，又乖乖回去做復健，日子總是要過下去。」</p>
+                                        <p>因為一場從三樓墜落的工安意外導致陳大哥脊椎粉碎性骨折，目前仍在努力復健中，人生雖遭逢如此劇變，但陳大哥還是很樂觀的面對一切。手術後每天坐不好也躺不好。因脊椎損傷的關係，有很多工作都無法勝任……</p>
                                     </div>
                                     <button class="moreBtn">
-                                        <a href="story_TaichungEslite.html">Read More</a>
+                                        <a href="story_allArea.html">Read More</a>
                                     </button>
                                 </li>
                                 <li>
                                     <div class="salesPhoto">
-                                        <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/sales/sales_06.png?raw=true" alt="">
+                                        <img src="material/sales/sales_06.png" alt="">
                                     </div>
                                     <div class="storyTxt">
                                         <h3>雲林科技大學</h3>
-                                        <p>「以前有做過會計助理，也待過會計事務所，但這些工作的壓力大到我無法負荷。後來精神狀況不好後，就完全無法勝任工作了。」</p>
+                                        <p>「以前做過會計助理，也待過會計事務所，但工作的壓力大到我無法負荷。後來精神狀況不好，就完全無法勝任工作。」</p>
                                         <p>2016年宛純搬來亞葵小鎮生活，這裏是一個提供精神復健的場域，過去曾對人群恐慌，內心時時充滿負面情緒且感到焦慮，在老師的細心陪伴與支持下，她重新尋回正向、積極的自我，並努力找回重返社會的動能……</p>
                                     </div>
                                     <button class="moreBtn">
-                                        <a href="story_YunlinYunTech.html">Read More</a>
+                                        <a href="story_allArea.html">Read More</a>
                                     </button>
                                 </li>
                             </ul>
@@ -266,24 +296,24 @@
                     <h2>關於大誌</h2>
                     <div class="aboutContent">
                         <div class="asideCommon">
-                            <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/logo/Side_title_03.png?raw=true" alt="Aside Title">
+                            <img src="material/logo/Side_title_03.png" alt="Aside Title">
                         </div>
                         <ul class="aboutUs">
                             <li>
                                 <div class="aboutPic">
-                                    <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/04-about/About_01.png?raw=true" alt="">
-                                    <img class="numberPic" src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/07150b1336e1f963b64ecf0a826d239b10089280/material/01-PC/pc-about/aboutme_number_01-01.svg" alt="">
+                                    <img src="material/01-PC/04-about/About_01.png" alt="">
+                                    <img class="numberPic" src="material/01-PC/04-about/aboutme_number_01-01.svg" alt="">
                                 </div>
                                 <div class="aboutTxt">
                                     <h3>關於我們</h3>
-                                    <h4>不只是雜誌，對於愛文化的人，還是本工具書</h4>
+                                    <h4>不只是本雜誌，對於愛文化的人，還是本工具書</h4>
                                     <p>The Big Issue 是 John Bird 在1991年在英國創辦的雜誌，內容涵括時事、社會議題及藝文資訊，目前於全球十個國家以不同版本的形式發行。特別的是，這份刊物的通路，是透過街友及弱勢族群來販售。台灣大智文創在2009年取得授權，在2010年4月1日正式創刊。</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="aboutPic">
-                                    <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/04-about/About_02.png?raw=true" alt="">
-                                    <img class="numberPic" src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/07150b1336e1f963b64ecf0a826d239b10089280/material/01-PC/pc-about/aboutme_number_01-02.svg" alt="">
+                                    <img src="material/01-PC/04-about/About_02.png" alt="">
+                                    <img class="numberPic" src="material/01-PC/04-about/aboutme_number_01-02.svg" alt="">
                                 </div>
                                 <div class="aboutTxt">
                                     <h3>我們的理念</h3>
@@ -294,8 +324,8 @@
                             </li>
                             <li>
                                 <div class="aboutPic">
-                                    <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/04-about/About_03.png?raw=true" alt="">
-                                    <img class="numberPic" src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/07150b1336e1f963b64ecf0a826d239b10089280/material/01-PC/pc-about/aboutme_number_01-03.svg" alt="">
+                                    <img src="material/01-PC/04-about/About_03.png" alt="">
+                                    <img class="numberPic" src="material/01-PC/04-about/aboutme_number_01-03.svg" alt="">
                                 </div>
                                 <div class="aboutTxt">
                                     <h3>Stay Hungry，Stay Foolish</h3>
@@ -311,7 +341,7 @@
 
                 <section class="section supportBanner">
                     <h2>Support Banner</h2>
-                    <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/08fe1401eb595397ec4099686cdb7091cc6cae52/material/01-PC/05-support/sub-banner.svg" alt="">
+                    <img src="material/01-PC/05-support/sub-banner.svg" alt="">
                 </section>
 
 <!-- ------------------------------------------------------------------------------------------- -->
@@ -320,35 +350,35 @@
                     <h2>支持訂閱</h2>
                     <div class="supportContent">
                         <div class="asideCommon">
-                            <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/05-support/s4SideTitle.png?raw=true" alt="Aside Title">
+                            <img src="material/01-PC/05-support/s4SideTitle.svg" alt="Aside Title">
                         </div>
                         <div class="supportWay">
                             <div class="supportTxt">
-                                <p>The Big Issue 雜誌致力於帶給弱勢族群，在社會上獲得更多的生活主導權，並持續努力推動著這個行動。若您對 The Big Issue 有興趣，在路上見到橘色背心的夥伴，請別吝於給他們一個微笑或是實質支持，對他們來說都是偌大的鼓勵唷！</p>
-                                <p>目前個人訂閱尚未開放，我們希望「將當期雜誌的銷售全部保留給街頭販售員」，謝謝您的支持。下面三種的支持訂閱方式，參考世界各國 The Big Issue 雜誌的做法，供您選擇：</p>
+                                <p>The Big Issue 雜誌致力於帶給社會上的弱勢族群，在社會上能夠獲得更多的生活主導權，並持續努力著推動這個行動。若您剛好對 The Big Issue 有興趣，在路上見到橘色背心的夥伴，請別吝於給他們一個微笑或是實質支持，對他們來說都是偌大的鼓勵唷！</p>
+                                <p>目前個人訂閱的部分尚未開放，我們希望能夠「將當期雜誌的銷售保留給街頭販售員」，謝謝您的支持。以下三種方案的支持訂閱方式，參考了世界各國的 The Big Issue 雜誌做法，供您選擇：</p>
                             </div>
                             <ol class="supportList">
                                 <h2>Subscription List</h2>
                                 <li>
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScLhUIVvMp2sS8o_OknFUCrglvROvbQ5PiH1okvh6-0ojbRqg/viewform">
-                                        <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/e7a39deef0fa9d68f812ff93f3ed7da68b4b92e3/material/01-PC/05-support/support_A.svg" alt="">
+                                    <a href="#">
+                                        <img src="material/01-PC/05-support/support_A.svg" alt="">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScLhUIVvMp2sS8o_OknFUCrglvROvbQ5PiH1okvh6-0ojbRqg/viewform">
-                                        <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/e7a39deef0fa9d68f812ff93f3ed7da68b4b92e3/material/01-PC/05-support/support_B.svg" alt="">
+                                    <a href="#">
+                                        <img src="material/01-PC/05-support/support_B.svg">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScLhUIVvMp2sS8o_OknFUCrglvROvbQ5PiH1okvh6-0ojbRqg/viewform">
-                                        <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/e7a39deef0fa9d68f812ff93f3ed7da68b4b92e3/material/01-PC/05-support/support_C.svg" alt="">
+                                    <a href="#">
+                                        <img src="material/01-PC/05-support/support_C.svg" alt="">
                                     </a>
                                 </li>
                             </ol>
                         </div>
                     </div>
                     <button class="moreBtn">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScLhUIVvMp2sS8o_OknFUCrglvROvbQ5PiH1okvh6-0ojbRqg/viewform">我要訂閱</a>
+                        <a href="#">我要訂閱</a>
                     </button>
                 </section>
 
@@ -358,12 +388,12 @@
                     <h2>販售場所</h2>
                     <div class="salePointsContent">
                         <div class="asideCommon">
-                            <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/06-place/s5SideTitle.png?raw=true" alt="Aside Title">
+                            <img src="material/01-PC/06-place/s5SideTitle.png" alt="Aside Title">
                         </div>
                         <div class="saleStore">
                             <div class="saleStoreMaps">
                                 <div class="saleStoreTxt">
-                                    <p>販售場所的資訊會即時更新於以下的TBI Map</p>
+                                    <p>販售場所的資訊會即時更新於以下的TBI Map：</p>
                                     <p>放大或點按販售點即可看到販售時間與販售中的照片方便您找尋販售員</p>
                                     <p>當期雜誌以販售員為唯一的銷售通路，過期雜誌也可向販售員購買或透過我們的推廣站支持我們。</p>
                                     <p>因每名販售員的生活情境不同，我們會根據其作息及情況加以調整，站點也會不定期更新。</p>
@@ -375,12 +405,12 @@
                             <div class="fixedPoints">
                                 <h2>寄賣據點</h2>
                                 <div class="fixedPointTxt">
-                                    <p>若想購買非當期的雜誌，您可以前往與我們有合作的店家，</p>
-                                    <p>以下是我們在台灣各地的寄賣場所：</p>
+                                    <p>若您想購買非當期的雜誌，您可以前往和我們合作的店家。</p>
+                                    <p>以下是台灣各地的寄賣場所：</p>
                                 </div>
                                 <div class="taiwanAreas">
                                     <div class="mapsDetail">
-                                        <img class="taiwanMap" src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/taiwan.png" usemap="#image-map">
+                                        <img class="taiwanMap" src="material/01-PC/06-place/taiwan.png" usemap="#image-map">
                                         <map name="image-map">
                                             <area target="" alt="北部" title="北部" href="###" shape="poly" class="areaShow areaOn" coords="124, 190, 125, 193, 126, 195, 129, 198, 130, 201, 132, 203, 135, 207, 137, 208, 139, 209, 143, 210, 146, 213, 147, 214, 150, 215, 152, 216, 155, 217, 158, 218, 161, 221, 162, 223, 165, 224, 167, 224, 169, 224, 171, 223, 173, 222, 175, 223, 176, 223, 178, 223, 180, 222, 181, 220, 181, 217, 180, 216, 180, 215, 182, 213, 184, 213, 185, 214, 187, 214, 189, 215, 191, 214, 193, 215, 195, 215, 199, 216, 198, 218, 201, 219, 203, 220, 204, 222, 207, 223, 207, 221, 209, 219, 210, 218, 211, 216, 213, 217, 216, 217, 220, 216, 221, 214, 222, 212, 223, 211, 223, 210, 225, 210, 227, 209, 228, 209, 229, 208, 230, 208, 231, 207, 231, 206, 232, 206, 232, 204, 233, 204, 234, 204, 235, 203, 236, 202, 236, 201, 238, 201, 240, 201, 240, 203, 240, 204, 242, 203, 242, 203, 243, 203, 244, 202, 245, 201, 245, 199, 245, 198, 245, 197, 245, 195, 248, 194, 252, 193, 257, 193, 257, 192, 255, 192, 253, 193, 261, 192, 262, 190, 263, 188, 264, 187, 264, 185, 266, 185, 266, 184, 267, 182, 267, 182, 270, 180, 272, 179, 272, 178, 273, 177, 276, 176, 275, 175, 276, 173, 276, 172, 277, 171, 277, 170, 277, 168, 277, 166, 278, 164, 280, 163, 280, 161, 279, 159, 279, 158, 279, 157, 281, 156, 281, 156, 282, 154, 283, 153, 283, 152, 284, 151, 285, 149, 285, 147, 287, 145, 287, 145, 287, 143, 288, 141, 290, 139, 292, 138, 293, 138, 296, 138, 297, 138, 300, 138, 302, 137, 304, 136, 304, 135, 306, 135, 306, 135, 308, 132, 309, 132, 312, 131, 313, 130, 316, 129, 318, 128, 318, 127, 317, 126, 317, 124, 317, 122, 317, 119, 317, 118, 318, 116, 318, 115, 318, 115, 319, 114, 320, 112, 322, 112, 323, 112, 324, 111, 323, 110, 323, 109, 326, 109, 327, 108, 328, 108, 328, 108, 330, 107, 331, 107, 332, 107, 333, 107, 334, 107, 334, 107, 334, 105, 335, 104, 336, 105, 336, 105, 338, 103, 339, 102, 341, 102, 342, 101, 342, 100, 346, 99, 346, 98, 346, 98, 346, 99, 348, 98, 349, 98, 351, 99, 352, 99, 353, 99, 353, 97, 353, 95, 354, 97, 355, 96, 356, 94, 356, 93, 356, 92, 356, 92, 357, 88, 359, 88, 360, 88, 361, 87, 362, 87, 363, 87, 363, 87, 368, 87, 367, 86, 367, 86, 368, 85, 369, 83, 369, 81, 368, 80, 368, 79, 370, 75, 371, 74, 372, 74, 374, 74, 375, 74, 376, 74, 377, 73, 377, 73, 378, 72, 379, 72, 380, 72, 380, 72, 381, 71, 381, 71, 383, 71, 385, 71, 386, 70, 386, 69, 387, 69, 388, 68, 388, 68, 391, 67, 393, 67, 394, 67, 395, 68, 397, 67, 397, 66, 399, 66, 399, 66, 399, 64, 399, 62, 398, 61, 397, 61, 396, 61, 394, 61, 393, 61, 392, 61, 391, 61, 391, 61, 391, 60, 391, 59, 390, 59, 389, 58, 389, 57, 388, 56, 387, 55, 387, 54, 387, 53, 386, 52, 386, 52, 385, 51, 385, 50, 384, 49, 383, 49, 383, 48, 383, 47, 383, 46, 384, 46, 384, 45, 385, 43, 385, 42, 385, 41, 385, 40, 385, 39, 385, 39, 384, 39, 383, 40, 381, 40, 378, 39, 378, 39, 376, 39, 372, 39, 371, 40, 368, 40, 366, 39, 365, 39, 364, 38, 361, 36, 361, 36, 359, 34, 359, 34, 357, 33, 356, 33, 354, 33, 354, 32, 351, 31, 348, 30, 346, 30, 345, 30, 344, 30, 344, 30, 343, 28, 339, 26, 339, 26, 338, 25, 335, 24, 335, 23, 335, 22, 330, 20, 331, 19, 331, 18, 330, 17, 328, 15, 328, 15, 328, 15, 325, 13, 325, 11, 324, 10, 324, 5, 323, 4, 319, 4, 319, 4, 312, 1, 310, 1, 307, 1, 305, 3, 304, 4, 299, 5, 299, 8, 299, 9, 295, 11, 292, 12, 290, 12, 287, 15, 287, 18, 283, 21, 283, 21, 282, 22, 284, 24, 285, 24, 286, 26, 287, 27, 289, 29, 289, 29, 286, 29, 284, 30, 283, 30, 283, 31, 279, 33, 279, 35, 278, 35, 276, 35, 273, 37, 273, 37, 270, 37, 270, 38, 267, 38, 265, 40, 262, 40, 258, 40, 257, 41, 256, 42, 255, 42, 255, 41, 253, 40, 251, 40, 250, 41, 250, 42, 248, 42, 248, 42, 245, 44, 243, 44, 240, 44, 238, 44, 237, 45, 235, 46, 234, 47, 232, 47, 232, 47, 231, 48, 229, 49, 228, 49, 226, 50, 224, 50, 224, 51, 220, 52, 219, 53, 218, 53, 215, 55, 214, 55, 213, 56, 208, 60, 208, 60, 208, 60, 212, 59, 213, 58, 205, 61, 205, 65, 204, 65, 204, 66, 199, 71, 201, 70, 201, 69, 201, 72, 201, 73, 201, 73, 199, 76, 197, 77, 196, 78, 195, 78, 194, 80, 193, 82, 193, 83, 192, 85, 191, 85, 191, 86, 191, 88, 191, 89, 191, 90, 191, 92, 191, 93, 191, 93, 189, 94, 188, 94, 188, 95, 188, 97, 187, 98, 187, 98, 186, 99, 184, 100, 184, 101, 184, 101, 184, 103, 184, 103, 184, 103, 182, 104, 182, 105, 182, 105, 182, 105, 179, 105, 179, 107, 179, 107, 180, 109, 180, 110, 180, 113, 180, 114, 179, 115, 179, 117, 179, 118, 179, 119, 178, 120, 178, 122, 177, 123, 176, 124, 175, 125, 175, 125, 173, 125, 172, 125, 170, 127, 169, 128, 169, 128, 168, 128, 166, 130, 166, 131, 167, 132, 167, 133, 167, 133, 165, 137, 165, 137, 165, 139, 164, 140, 162, 141, 160, 141, 159, 142, 157, 143, 156, 143, 156, 143, 154, 144, 153, 144, 152, 144, 151, 144, 150, 145, 150, 146, 150, 146, 150, 148, 149, 149, 149, 150, 149, 151, 149, 151, 148, 152, 147, 153, 144, 153, 144, 153, 143, 153, 141, 155, 140, 155, 140, 156, 140, 158, 139, 159, 137, 160, 136, 160, 136, 162, 136, 163, 137, 165, 136, 166, 135, 168, 135, 169, 135, 169, 136, 171, 136, 173, 134, 175, 134, 176, 134, 176, 133, 177, 131, 178, 131, 179, 130, 181, 130, 182, 129, 183, 129, 184, 128, 185, 127, 186, 127, 186, 127, 186">
                                             <area target="" alt="西部" title="西部" href="###" shape="poly" class="areaShow" coords="122, 194, 126, 199, 132, 205, 136, 211, 143, 213, 150, 218, 153, 220, 157, 220, 161, 225, 167, 228, 172, 226, 174, 225, 178, 225, 180, 226, 182, 223, 182, 220, 180, 218, 182, 215, 185, 215, 189, 216, 193, 216, 196, 215, 197, 217, 199, 219, 204, 223, 207, 224, 209, 221, 211, 221, 212, 218, 215, 218, 219, 218, 221, 217, 222, 215, 224, 212, 226, 211, 228, 209, 228, 209, 230, 209, 233, 208, 234, 207, 235, 204, 238, 202, 242, 207, 244, 203, 246, 199, 248, 197, 252, 195, 255, 195, 258, 194, 260, 194, 262, 194, 264, 195, 264, 199, 264, 201, 266, 203, 269, 203, 272, 205, 274, 207, 278, 207, 279, 205, 284, 205, 286, 206, 287, 208, 286, 211, 286, 214, 286, 214, 285, 216, 285, 218, 283, 220, 282, 221, 280, 222, 279, 225, 277, 226, 276, 228, 275, 230, 275, 231, 272, 232, 271, 234, 270, 235, 270, 239, 268, 241, 268, 243, 265, 246, 262, 247, 259, 248, 255, 251, 255, 255, 255, 256, 255, 258, 256, 260, 258, 261, 260, 263, 261, 264, 262, 266, 263, 267, 263, 270, 262, 272, 261, 274, 258, 275, 256, 276, 255, 280, 255, 282, 254, 286, 251, 288, 251, 291, 251, 291, 251, 292, 252, 296, 253, 296, 253, 301, 253, 303, 253, 305, 253, 306, 252, 308, 252, 310, 252, 312, 252, 313, 252, 315, 252, 316, 251, 318, 248, 321, 248, 321, 247, 325, 245, 328, 246, 329, 246, 332, 245, 334, 243, 334, 242, 337, 241, 339, 241, 341, 241, 345, 243, 346, 244, 349, 244, 350, 245, 353, 246, 355, 246, 356, 246, 358, 246, 361, 244, 364, 243, 368, 244, 370, 244, 371, 243, 373, 243, 375, 242, 377, 241, 378, 238, 378, 234, 378, 233, 381, 233, 382, 232, 383, 230, 383, 230, 386, 230, 388, 229, 390, 229, 391, 229, 394, 229, 394, 225, 396, 222, 396, 221, 397, 217, 397, 214, 397, 213, 397, 209, 401, 208, 404, 207, 406, 207, 408, 209, 409, 207, 411, 206, 411, 204, 413, 202, 415, 202, 409, 200, 408, 197, 407, 195, 407, 190, 407, 188, 406, 183, 406, 180, 406, 176, 406, 175, 406, 172, 406, 169, 406, 166, 406, 166, 406, 164, 404, 163, 402, 162, 399, 162, 397, 162, 396, 159, 393, 160, 391, 162, 389, 162, 387, 162, 387, 162, 384, 162, 382, 161, 380, 159, 379, 157, 378, 153, 376, 151, 376, 149, 375, 146, 374, 143, 375, 142, 378, 142, 379, 143, 382, 141, 383, 140, 385, 138, 383, 136, 384, 134, 384, 132, 383, 130, 383, 127, 384, 125, 382, 125, 381, 124, 380, 120, 380, 120, 382, 120, 382, 116, 381, 112, 380, 111, 380, 111, 380, 108, 379, 106, 379, 106, 379, 103, 379, 102, 377, 101, 375, 100, 374, 99, 373, 98, 372, 95, 370, 93, 370, 89, 370, 89, 372, 87, 372, 84, 371, 83, 372, 82, 373, 81, 373, 79, 372, 76, 372, 75, 372, 74, 374, 72, 375, 72, 375, 68, 376, 67, 376, 66, 379, 67, 379, 63, 381, 61, 382, 61, 384, 60, 384, 57, 384, 56, 387, 56, 387, 54, 388, 52, 389, 51, 390, 50, 392, 50, 393, 47, 393, 47, 391, 44, 391, 43, 394, 43, 395, 42, 396, 42, 397, 39, 397, 37, 397, 34, 397, 31, 397, 28, 397, 26, 397, 26, 396, 24, 394, 21, 396, 22, 392, 22, 387, 21, 383, 21, 379, 23, 376, 23, 372, 24, 370, 24, 368, 25, 366, 25, 365, 26, 364, 27, 363, 28, 361, 29, 360, 30, 358, 30, 358, 29, 356, 28, 356, 27, 353, 28, 352, 28, 349, 29, 343, 31, 339, 32, 339, 33, 337, 35, 335, 36, 334, 37, 332, 38, 331, 39, 329, 40, 328, 43, 326, 44, 326, 47, 323, 48, 322, 49, 319, 52, 315, 52, 315, 52, 315, 51, 316, 53, 312, 54, 311, 60, 308, 59, 306, 59, 305, 60, 302, 61, 300, 62, 299, 63, 299, 63, 295, 62, 295, 61, 292, 62, 290, 64, 287, 65, 285, 67, 283, 68, 283, 69, 282, 71, 280, 72, 279, 74, 277, 76, 275, 78, 273, 79, 272, 79, 269, 80, 267, 81, 265, 82, 263, 82, 261, 82, 260, 83, 258, 84, 256, 86, 254, 89, 251, 90, 250, 92, 248, 95, 246, 95, 246, 95, 244, 96, 242, 97, 240, 97, 239, 98, 238, 97, 236, 97, 235, 96, 235, 96, 233, 97, 231, 97, 230, 99, 228, 101, 225, 101, 224, 101, 223, 102, 220, 103, 219, 104, 218, 106, 213, 106, 213, 107, 212, 108, 211, 110, 208, 111, 207, 113, 205, 113, 204, 114, 203, 118, 200, 118, 200, 118, 198, 120, 195" />
@@ -391,19 +421,19 @@
                                     <div class="content-group">
                                         <div id="north" class="areaMap northArea mapOn">
                                             <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/stickN.png" alt="">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/areaTaipei.png" alt="">
+                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/a0821f420283be6d9ddb6181ad381f483712e7a2/material/01-PC/06-place/areaTaipei.svg" alt="">
                                         </div>
                                         <div id="west" class="areaMap westArea">
                                             <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/stickN.png" alt="">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/areaTaichung.png" alt="">
+                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/a0821f420283be6d9ddb6181ad381f483712e7a2/material/01-PC/06-place/areaTaichung.svg" alt="">
                                         </div>
                                         <div id="south" class="areaMap southArea">
                                             <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/stickS.png" alt="">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/areaTainan.png" alt="">
+                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/a0821f420283be6d9ddb6181ad381f483712e7a2/material/01-PC/06-place/areaTainan.svg" alt="">
                                         </div>
                                         <div id="east" class="areaMap eastArea">
                                             <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/stickE.png" alt="">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/areaTaidong.png" alt="">
+                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/a0821f420283be6d9ddb6181ad381f483712e7a2/material/01-PC/06-place/areaTaidong.svg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -419,7 +449,7 @@
 
             <div class="asideBar">
                 <div class="asideLogo">
-                    <a href="index.html"><img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/logo/Nav_logo-01.png?raw=true" alt="Aside Big Issue Logo"></a>
+                    <a href="index.html"><img src="material/logo/Nav_logo-01.png" alt="Aside Big Issue Logo"></a>
                 </div>
                 <nav>
                     <h2>Aside Navigation</h2>
@@ -434,10 +464,13 @@
                             <a href="#aboutId"><span>關於大誌</span></a>
                         </li>
                         <li>
-                            <a href="#supportId"><span>支持訂閱</span></a>
+                            <a href="#supportId"><span>訂閱支持</span></a>
                         </li>
                         <li>
                             <a href="#salePointsId"><span>販售場所</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>回到頂端</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -450,30 +483,31 @@
             <div class="footerContent">
                 <ul class="footerInfo">
                     <li>
-                        <a href="index.html"><img a src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/07-footer/fotterLogo.png?raw=true"
-                            alt=""></a>
+                        <div class="fooerLogo">
+                            <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/07-footer/fotterLogo.png?raw=true" alt="">
+                        </div>
                     </li>
                     <li>
                         <ul class="footerSocial">
                             <li>
-                                <a href="https://zh-tw.facebook.com/bigissue.tw">
+                                <a href="#">
                                     <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/aa5682bc9e55b6bacee82e516c90a2724e25e310/material/01-PC/07-footer/icon_fb.svg" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/bigissue.tw/">
+                                <a href="#">
                                     <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/aa5682bc9e55b6bacee82e516c90a2724e25e310/material/01-PC/07-footer/icon_ig.svg" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:service@bigissue.tw">
+                                <a href="#">
                                     <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/aa5682bc9e55b6bacee82e516c90a2724e25e310/material/01-PC/07-footer/icon_email.svg" alt="">
                                 </a>
                             </li>
                         </ul>
                     </li>
                 </ul>
-                <ul class="footerInfo">
+                <ul class="footerInfo contactInfo">
                     <li>
                         <ul class="footerAboutIssue">
                             <li>地址： 八德路一段28號2樓</li>

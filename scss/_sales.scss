@@ -1,3 +1,4 @@
+// Sales
 .sales{
     h2{
         font-size: 36px;
@@ -10,7 +11,9 @@
         .salesStory{
             width: 70%;
             margin: 0 auto;
-            .salesList{
+            
+        }
+        .salesList{
                 display: flex;
                 justify-content: space-around;
                 margin-bottom: 50px;
@@ -34,7 +37,7 @@
                     }
                     .storyTxt{
                         h3{
-                            font-size: 25px;
+                            font-size: 22px;
                             text-align: center;
                             padding: 20px 0;
                             position: relative;
@@ -69,6 +72,33 @@
                     width: 50%;
                 }
             }
+    }
+}
+@media screen and (max-width: 769px){
+    .sales{
+        h2{
+            padding: 25px 0;
         }
+        .salesContent{
+            .salesStory{
+                width: 90%;
+                .salesList{
+                    .storyTxt{
+                        h3{
+                        font-size: 18px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                        p:last-child{
+                            font-size: 12px;
+                        }
+
+                }
+            }
+            
+            }
+        }
+        
     }
 }

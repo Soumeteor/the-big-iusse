@@ -23,6 +23,13 @@ $(document).ready(function () {
         $("#menuBtn").click()
     });
 
+
+    // 
+    // $(".menuCtrl").onclick(function () {
+    //     $(".mobileNavBar").addClass()
+    // })
+
+
     // RWD Maps
     $('img[usemap]').rwdImageMaps();
     
