@@ -3,7 +3,7 @@ html,
 body {
   line-height: 1.5;
   scroll-behavior: smooth;
-  font-family: "Noto Sans ", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 h1,
@@ -16,7 +16,8 @@ h6 {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a,
@@ -42,13 +43,18 @@ img {
 }
 
 .allContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .allContent .asideBar {
   width: 100px;
   height: 100%;
+  position: -webkit-sticky;
   position: sticky;
   padding-top: 50px;
   top: 0;
@@ -71,10 +77,13 @@ img {
 .allContent .asideBar .asideNavBarList a {
   display: block;
   font-size: 18px;
-  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   line-height: 100px;
   padding: 25px 0;
   position: relative;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -87,6 +96,7 @@ img {
   content: "";
   position: absolute;
   height: 0;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -122,6 +132,7 @@ img {
 
 .asideCommon {
   width: 100px;
+  position: -webkit-sticky;
   position: sticky;
   height: 100%;
   top: 50px;
@@ -139,9 +150,12 @@ img {
 .moreBtn a {
   display: block;
   padding: 13px 24px;
-  transform: translate(-5px, -5px);
-  box-shadow: 5px 5px 0 #ff8729;
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+  -webkit-box-shadow: 5px 5px 0 #ff8729;
+          box-shadow: 5px 5px 0 #ff8729;
   position: relative;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -154,6 +168,7 @@ img {
   left: -12px;
   border-bottom: 2px solid #aaa;
   bottom: 0;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -167,12 +182,15 @@ img {
   border-left: 2px solid #aaa;
   top: -11px;
   left: 0;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .moreBtn a:hover {
-  transform: translate(5px, 5px);
-  box-shadow: 0 0 0 #fff;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+  -webkit-box-shadow: 0 0 0 #fff;
+          box-shadow: 0 0 0 #fff;
   background-color: #ff8729;
   color: #fff;
 }
@@ -195,13 +213,16 @@ img {
   z-index: 2;
   top: 12px;
   left: 100px;
-  transform: translate(-5px, -5px);
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .moreBtn:hover:before {
   height: 0;
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
 }
 
 .header h1 {
@@ -226,7 +247,8 @@ img {
   margin: 0 auto;
   line-height: 100vh;
   padding: 10px;
-  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .header .bannerTxt {
@@ -241,8 +263,10 @@ img {
 .header .bannerTxt .logo {
   width: 85%;
   margin: 0 auto;
-  animation-delay: 1s;
-  animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .header .bannerTxt .logo img {
@@ -256,6 +280,8 @@ img {
 }
 
 .issue .issueContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -269,7 +295,8 @@ img {
 }
 
 .issue .issueContent .carousel .animate__fadeInUp {
-  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 .sales h2 {
@@ -279,6 +306,8 @@ img {
 }
 
 .sales .salesContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
 }
@@ -289,8 +318,11 @@ img {
 }
 
 .sales .salesContent .salesStory .salesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 50px;
 }
 
@@ -305,7 +337,8 @@ img {
 .sales .salesContent .salesStory .salesList li .salesPhoto {
   width: 90%;
   margin: 0 auto;
-  box-shadow: 5px 5px 5px #ccc;
+  -webkit-box-shadow: 5px 5px 5px #ccc;
+          box-shadow: 5px 5px 5px #ccc;
 }
 
 .sales .salesContent .salesStory .salesList li > .moreBtn {
@@ -333,6 +366,7 @@ img {
   left: 25%;
   bottom: 10px;
   z-index: -1;
+  -webkit-transition: width .3s;
   transition: width .3s;
 }
 
@@ -363,6 +397,8 @@ img {
 }
 
 .about .aboutContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -372,17 +408,24 @@ img {
 }
 
 .about .aboutUs li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin-bottom: 50px;
 }
 
 .about .aboutUs li:nth-child(2) {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .about .aboutUs li:nth-child(2) .aboutTxt {
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .about .aboutUs .aboutPic {
@@ -399,9 +442,16 @@ img {
 .about .aboutUs .aboutTxt {
   width: 50%;
   background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/04-about/bg-about.png?raw=true);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about .aboutUs .aboutTxt h3, .about .aboutUs .aboutTxt h4, .about .aboutUs .aboutTxt p {
@@ -439,6 +489,8 @@ img {
 
 .storyOfPeople,
 .magazines {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -466,6 +518,7 @@ img {
   display: block;
   font-size: 16px;
   padding: 30px 0;
+  -webkit-transition: .3s;
   transition: .3s;
   position: relative;
 }
@@ -520,6 +573,8 @@ img {
 .storyOfPeople .magazineBreadCrumb,
 .magazines .storyBreadCrumb,
 .magazines .magazineBreadCrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
 }
@@ -563,6 +618,7 @@ img {
   left: 0;
   bottom: 0;
   z-index: -1;
+  -webkit-transition: width .3s;
   transition: width .3s;
 }
 
@@ -640,6 +696,7 @@ img {
   left: 0;
   opacity: 1;
   z-index: 2;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -653,8 +710,12 @@ img {
 .magazines .storyArticle .storyPicDescription {
   width: 90%;
   margin: 0 auto 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/03-story/Story_bg.png?raw=true);
 }
 
@@ -670,7 +731,8 @@ img {
 
 .storyOfPeople .storyArticle .storyPicDescription .storyPic img,
 .magazines .storyArticle .storyPicDescription .storyPic img {
-  box-shadow: 5px 5px 5px #fa0;
+  -webkit-box-shadow: 5px 5px 5px #fa0;
+          box-shadow: 5px 5px 5px #fa0;
 }
 
 .storyOfPeople .storyArticle .storyPicDescription .picTxt,
@@ -737,8 +799,12 @@ img {
 .magazines .centralStory li,
 .magazines .southStory li,
 .magazines .eastStory li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/03-story/Story_bg.png?raw=true);
   margin-bottom: 50px;
 }
@@ -767,7 +833,8 @@ img {
 .magazines .southStory .allStoryPic,
 .magazines .eastStory .allStoryPic {
   width: 39%;
-  box-shadow: 5px 5px 5px #fa0;
+  -webkit-box-shadow: 5px 5px 5px #fa0;
+          box-shadow: 5px 5px 5px #fa0;
 }
 
 .storyOfPeople .allStoryList .allStoryTxt,
@@ -830,6 +897,7 @@ img {
   border-bottom: 4px solid #fa0;
   bottom: 0;
   left: 0;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -878,8 +946,12 @@ img {
 
 .storyOfPeople .allMagazineList,
 .magazines .allMagazineList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 50px;
 }
 
@@ -914,6 +986,8 @@ img {
 }
 
 .supportContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -931,9 +1005,14 @@ img {
 }
 
 .supportContent .supportList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 50px;
 }
 
@@ -951,12 +1030,15 @@ img {
 
 .supportContent .supportList a {
   display: block;
+  -webkit-transition: .5s;
   transition: .5s;
-  box-shadow: 5px 5px 5px #ccc;
+  -webkit-box-shadow: 5px 5px 5px #ccc;
+          box-shadow: 5px 5px 5px #ccc;
 }
 
 .supportContent .supportList a:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .salePoints h2 {
@@ -966,6 +1048,8 @@ img {
 }
 
 .salePoints .salePointsContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1013,9 +1097,15 @@ img {
 }
 
 .fixedPoints .taiwanAreas {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .fixedPoints .taiwanAreas .mapsDetail {
@@ -1085,16 +1175,26 @@ img {
 }
 
 .footerContent .footerInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
   font-size: 14px;
 }
 
 .footerContent .footerInfo .footerSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footerContent .footerInfo .footerSocial li {
@@ -1108,6 +1208,8 @@ img {
 }
 
 .footerContent .footerInfo .footerAboutIssue {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 

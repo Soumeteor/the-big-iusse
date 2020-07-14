@@ -1,6 +1,7 @@
 
 
 $(document).ready(function () {
+    // touch & slide on tablet & mobile 
     $(".carousel").on("touchstart", function (event) {
         var xClick = event.originalEvent.touches[0].pageX;
         $(this).one("touchmove", function (event) {
@@ -17,8 +18,14 @@ $(document).ready(function () {
         });
     });
 
+    // 
     $(".closeBtn").click(function (closeBtn) {
         $("#menuBtn").click()
     });
+
+    // RWD Maps
+    $('img[usemap]').rwdImageMaps();
+    
+
 })
 
