@@ -1771,7 +1771,7 @@ img {
   .fixedPoints .mobileTaiwanPoint .mobilePointList .mobileArea:first-child ~ .mobileArea {
     border-left: none;
   }
-  .fixedPoints .mobileTaiwanPoint .mobilePointList .mobileArea.areaShow {
+  .fixedPoints .mobileTaiwanPoint .mobilePointList .mobileArea.areaOpen {
     background-color: #ff8729;
     color: #fff;
   }
