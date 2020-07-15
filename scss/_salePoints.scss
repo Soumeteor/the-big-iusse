@@ -53,6 +53,7 @@
         .areaMap{
             display: none;
             position: relative;
+            z-index: -1;
         }
         .areaMap.mapOn{
             display: block;

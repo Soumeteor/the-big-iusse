@@ -50,9 +50,10 @@
         }
         .mobileNavBar{
             width: 100%;
-            // height: 100px;
             position: fixed;
-            z-index: 1;
+            top: 0;
+            left: 0;
+            z-index: 2;
             background-color: #323232;
             box-shadow: 0 3px 5px #aaa;
             .logo{
@@ -73,32 +74,31 @@
         }
         #headerMenuCtrl:checked ~ .navWrap .mobileNavBarList{
             top: 75px;
-            // z-index: 1;
         }
         #headerMenuCtrl:checked ~ .navWrap .menuCtrl:before{
             box-shadow: 0px 12px 0 transparent,
                         0px -12px 0 transparent;
             transform: rotate(45deg);
-            // transition: 3s;
         }
         #headerMenuCtrl:checked ~ .navWrap .menuCtrl:after{
             transform: rotate(-45deg);
         }
         .navWrap{
             width: 100%;
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
+            z-index: 1;
         }
         .menuCtrl{
-            position: absolute;
+            position: fixed;
             display: block;
             width: 50px;
             height: 50px;
             top: 10px;
             right: 20px;
             font-size: 0;
-            z-index: 1;
+            z-index: 2;
         }
         .menuCtrl:before,
         .menuCtrl:after{
@@ -123,7 +123,7 @@
             top: -999px;
             left: 0;
             width: 100%;
-            // z-index: 3;
+            z-index: 1;
             transition: 1s;
             li{
                 font-size: 0;
@@ -174,10 +174,9 @@
                 }
             }
         }
-        .mobileDivider{
-            padding: 60px 0;
-        }
         .mobileHeaderBanner{
+            margin-top: 100px;
+            width: 100%;
             position: relative;
             z-index: -1;
             .mobileImpression{
@@ -191,14 +190,6 @@
                 top: 0;
                 left: -4%;
             }
-        }
-    }
-    @keyframes menuMove {
-        0%{
-            transform: rotateX(0deg);
-        }
-        100%{
-            transform: rotateX(45deg);
         }
     }
 }
