@@ -158,7 +158,7 @@
                 .mobileArea:first-child ~ .mobileArea{
                     border-left: none;
                 }
-                .mobileArea.areaShow{
+                .mobileArea.areaOpen{
                     background-color: $hover-background-color;
                     color: $hover-color;
                 }

@@ -20,7 +20,7 @@ function clearAllActive() {
         areaMap.classList.remove("mapOn")
     }
 }
-
+// -----------------------------------------------------------------------
 var mobileAreas = document.querySelectorAll(".mobileArea")
 var mobileStores = document.querySelectorAll(".mobileStore")
 
@@ -30,7 +30,7 @@ for (let index = 0; index < mobileAreas.length; index++) {
 
     mobileArea.onclick = function () {
         clearAllShow()
-        mobileArea.classList.add("areaShow")
+        mobileArea.classList.add("areaOpen")
         mobileStore.classList.add("storeOn")
     }
 }
@@ -39,7 +39,7 @@ function clearAllShow() {
     for (let index = 0; index < mobileAreas.length; index++) {
         const mobileArea = mobileAreas[index];
         const mobileStore = mobileStores[index];
-        mobileArea.classList.remove("areaShow")
+        mobileArea.classList.remove("areaOpen")
         mobileStore.classList.remove("storeOn")
     }
 }
