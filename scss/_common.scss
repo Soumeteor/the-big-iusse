@@ -186,4 +186,12 @@ img {
 	.moreBtn{
 		padding: 0;
 	}
+	.moreBtn:before {
+		left: 0;
+	}
+}
+@media screen and (max-width: 415px){
+	.section {
+		padding: 25px 0;
+	}
 }

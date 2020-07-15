@@ -49,11 +49,11 @@
         }
         .content-group{
             width: 50%;
+            position: relative;
+            z-index: 0;
         }
         .areaMap{
             display: none;
-            position: relative;
-            z-index: -1;
         }
         .areaMap.mapOn{
             display: block;
@@ -63,14 +63,13 @@
         .southArea img:last-child,
         .eastArea img:last-child{
             position: relative;
-            z-index: 2;
         }
         .northArea img:first-child,
         .westArea img:first-child,
         .southArea img:first-child,
         .eastArea img:first-child{
             position: absolute;
-
+            z-index: 0;
         }
         .northArea img:first-child{
             top: 0;
@@ -89,6 +88,9 @@
             left: -45%;
         }
     }
+    .mobileTaiwanPoint{
+        display: none;
+    }
 }
 @media screen and (max-width: 769px){
     .salePoints{
@@ -102,7 +104,78 @@
         }
     }
 }
-
+@media screen and (max-width: 415px){
+    .salePoints{
+        h2{
+            font-size: 26px;
+        }
+        .salePointsContent{
+            .saleStore{
+                width: 90%;
+            }
+            .saleStoreTxt{
+                p{
+                    font-size: 14px;
+                    span{
+                        display: block;
+                    }
+                }
+            }
+            .saleGoogleMap{
+                iframe{
+                    height: 350px;
+                }
+            }
+        }
+    }
+    .fixedPoints{
+        padding: 20px 0;
+        h2{
+            font-size: 26px;
+        }
+        .fixedPointTxt{
+            font-size: 14px;
+        }
+        .taiwanAreas{
+            display: none;
+        }
+        .mobileTaiwanPoint{
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            .mobilePointList{
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                .mobileArea{
+                    width: 25%;
+                    padding: 10px 0;
+                    border: 1px solid #aaa;
+                }
+                .mobileArea:first-child{
+                    border: 1px solid #aaa;
+                }
+                .mobileArea:first-child ~ .mobileArea{
+                    border-left: none;
+                }
+                .mobileArea.areaShow{
+                    background-color: $hover-background-color;
+                    color: $hover-color;
+                }
+            }
+            .mobilePointMap{
+                .mobileStore{
+                    border: 1px solid #aaa;
+                    border-top: none;
+                    display: none;
+                }
+                .mobileStore.storeOn{
+                    display: block;
+                }
+            }
+        }
+    }
+}
 
 
 

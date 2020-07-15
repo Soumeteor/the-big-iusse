@@ -34,8 +34,8 @@
         <div class="sectionContainer">
             <div class="mobileDevice">
                 <input class="headerMenu" type="checkbox" name="" id="headerMenuCtrl">
+                <!-- 為什麼input 沒有使用 display none，會跳回最頂端？ -->
                 <div class="mobileNavBar">
-                <!-- NavBar fixed, 注意下方需要空間 -->
                     <div class="logo">
                         <img class="menuOpenLogo" src="material/logo/LOGO-wt.svg" alt="Big Issue Logo">
                     </div>
@@ -44,11 +44,21 @@
                 <nav class="navWrap">
                     <h2>Navigation</h2>
                     <ul class="mobileNavBarList">
-                        <li><a href="#issueId"><span>各期雜誌</span></a></li>
-                        <li><a href="#salesId"><span>銷售群像</span></a></li>
-                        <li><a href="#aboutId"><span>關於大誌</span></a></li>
-                        <li><a href="#supportId"><span>訂閱支持</span></a></li>
-                        <li><a href="#salePointsId"><span>販售場所</span></a></li>
+                        <li>
+                            <a class="closeMenu" href="#issueId"><span>各期雜誌</span></a>
+                        </li>
+                        <li>
+                            <a class="closeMenu" href="#salesId"><span>銷售群像</span></a>
+                        </li>
+                        <li>
+                            <a class="closeMenu" href="#aboutId"><span>關於大誌</span></a>
+                        </li>
+                        <li>
+                            <a class="closeMenu" href="#supportId"><span>訂閱支持</span></a>
+                        </li>
+                        <li>
+                            <a class="closeMenu" href="#salePointsId"><span>販售場所</span></a>
+                        </li>
                         <li class="menuIcon">
                             <a href="#">
                                 <i class="fab fa-facebook"></i>
@@ -90,6 +100,8 @@
     <main>
         <div class="allContent">
             <div class="asideContent">
+<!-- ------------------------------------------------------------------------------------------- -->
+
                 <section class="section issue" id="issueId">
                     <h2>各期雜誌</h2>
                     <div class="issueContent">
@@ -341,7 +353,12 @@
 
                 <section class="section supportBanner">
                     <h2>Support Banner</h2>
-                    <img src="material/01-PC/05-support/sub-banner.svg" alt="">
+                    <img class="pcSupportBanne" src="material/01-PC/05-support/sub-banner.svg" alt="">
+                    <div class="mobileSupportBanner">
+                        <img src="material/sales/portrait_R.png" alt="">
+                        <p>我們的重心在於人力及街友與弱勢族群的召募、訓練、實習、分配、關懷、督導、發行站運作等工作。</p>
+                        <p>感謝您的支持，讓我們能夠把這些服務做得更好。</p>
+                    </div>
                 </section>
 
 <!-- ------------------------------------------------------------------------------------------- -->
@@ -394,7 +411,7 @@
                             <div class="saleStoreMaps">
                                 <div class="saleStoreTxt">
                                     <p>販售場所的資訊會即時更新於以下的TBI Map：</p>
-                                    <p>放大或點按販售點即可看到販售時間與販售中的照片方便您找尋販售員</p>
+                                    <p>放大或點按販售點即可看到販售時間與販售中的照片<span>方便您找尋販售員</span></p>
                                     <p>當期雜誌以販售員為唯一的銷售通路，過期雜誌也可向販售員購買或透過我們的推廣站支持我們。</p>
                                     <p>因每名販售員的生活情境不同，我們會根據其作息及情況加以調整，站點也會不定期更新。</p>
                                 </div>
@@ -420,32 +437,51 @@
                                     </div>
                                     <div class="content-group">
                                         <div id="north" class="areaMap northArea mapOn">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/stickN.png" alt="">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/a0821f420283be6d9ddb6181ad381f483712e7a2/material/01-PC/06-place/areaTaipei.svg" alt="">
+                                            <img src="material/01-PC/06-place/stickN.png" alt="">
+                                            <img src="material/01-PC/06-place/areaTaipei.png" alt="">
                                         </div>
                                         <div id="west" class="areaMap westArea">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/stickN.png" alt="">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/a0821f420283be6d9ddb6181ad381f483712e7a2/material/01-PC/06-place/areaTaichung.svg" alt="">
+                                            <img src="material/01-PC/06-place/stickW.png" alt="">
+                                            <img src="material/01-PC/06-place/areaTaichung.png" alt="">
                                         </div>
                                         <div id="south" class="areaMap southArea">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/stickS.png" alt="">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/a0821f420283be6d9ddb6181ad381f483712e7a2/material/01-PC/06-place/areaTainan.svg" alt="">
+                                            <img src="material/01-PC/06-place/stickN.png" alt="">
+                                            <img src="material/01-PC/06-place/areaTainan.png" alt="">
                                         </div>
                                         <div id="east" class="areaMap eastArea">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/01-PC/06-place/stickE.png" alt="">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/a0821f420283be6d9ddb6181ad381f483712e7a2/material/01-PC/06-place/areaTaidong.svg" alt="">
+                                            <img src="material/01-PC/06-place/stickE.png" alt="">
+                                            <img src="material/01-PC/06-place/areaTaidong.png" alt="">
                                         </div>
                                     </div>
                                 </div>
+                                <div class="mobileTaiwanPoint">
+                                    <ol class="mobilePointList">
+                                        <li class="mobileArea areaShow">北部</li>
+                                        <li class="mobileArea">中部</li>
+                                        <li class="mobileArea">南部</li>
+                                        <li class="mobileArea">東部</li>
+                                    </ol>
+                                    <ol class="mobilePointMap">
+                                        <li class="mobileStore storeOn">
+                                            <img src="material/03-PHONE/06-place/north-place.svg" alt="">
+                                        </li>
+                                        <li class="mobileStore">
+                                            <img src="material/03-PHONE/06-place/mediate-place.svg" alt="">
+                                        </li>
+                                        <li class="mobileStore">
+                                            <img src="material/03-PHONE/06-place/south-place.svg" alt="">
+                                        </li>
+                                        <li class="mobileStore">
+                                            <img src="material/03-PHONE/06-place/east-place.svg" alt="">
+                                        </li>
+                                    </ol>
+                                </div>
                             </div>
+                        </div>
                 </section>
-                
             </div>
-            
 
-
-
-
+<!-- ------------------------------------------------------------------------------------------- -->
 
             <div class="asideBar">
                 <div class="asideLogo">
