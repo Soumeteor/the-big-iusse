@@ -104,12 +104,18 @@
 }
 @media screen and (max-width: 576px){
     .salePoints{
-        padding:0 0 50px;
+        padding:0px;
         .salePointsContent{
+            background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/04-about/bg-about.png?raw=true);
+            opacity: 0.8;
             .saleStore{
                 width: 80%;
                 .saleStoreMaps{
                     margin-bottom: 0;
+                    
+                }
+                .saleStoreTxt{
+                    margin:20px 0 50px;
                 }
             }
         }
