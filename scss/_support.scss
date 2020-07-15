@@ -50,3 +50,34 @@
         
     }
 }
+@media screen and (max-width: 576px){
+    .supportBanner{
+        padding: 0 0;
+    }
+    .support{
+        h2{
+            padding:  25px 0 ;
+        }
+        .supportContent{
+            background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/04-about/bg-about.png?raw=true);
+           .supportWay{
+               width: 90%; 
+               background-color:  rgba(255, 255, 255, 0.5);
+               padding: 10px;
+               .supportTxt{
+                   
+               }
+               .supportList{
+                   display: block;
+                   li{
+                       width: 100%;
+                       margin-bottom: 15px;
+                   }
+               }
+           }
+        }
+        .moreBtn{
+            padding-top: 50px;
+        }
+    }
+}

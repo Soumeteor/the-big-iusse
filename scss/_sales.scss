@@ -103,3 +103,42 @@
         
     }
 }
+@media screen and (max-width: 576px){
+    .sales{
+        padding: 50px 0 0 0 ;
+        .salesContent{
+            .salesStory{
+                .salesList{
+                    display: block;
+                    margin-bottom: 0px;
+                    li{
+                        width: 100%;
+                        padding: 20px 0 ;
+                        .salesPhoto{
+                            width: 100%;
+                        }
+                        .storyTxt{
+                            h3{
+                                font-size: 20px;
+                                font-weight: 500;
+                            }
+                            p{
+                                font-size: 16px;
+                            }
+                            p:last-child{
+                                display: none;
+                            }
+                            
+                        }
+                        .moreBtn{
+                            width: 45%;
+                        }
+                    }
+                }
+            }
+        }
+        .moreBtn{
+            width: 60%;
+        }
+    }
+}

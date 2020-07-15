@@ -102,6 +102,19 @@
         }
     }
 }
+@media screen and (max-width: 576px){
+    .salePoints{
+        padding:0 0 50px;
+        .salePointsContent{
+            .saleStore{
+                width: 80%;
+                .saleStoreMaps{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
 
 
 
