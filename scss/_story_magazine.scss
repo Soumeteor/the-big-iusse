@@ -1,6 +1,10 @@
 .header{
     .headerPic{
         position: relative;
+        background-color: #fff;
+        .mobileHeaderPic{
+            display: none;
+        }
     }
     .headerPic:after{
         content: "";
@@ -49,10 +53,10 @@
     .storyAisdeMenu:before{
         content: "";
         position: absolute;
-        height: 130%;
+        height: 120%;
         border-right: 1px solid #dbdbdc;
         right: -7px;
-        top: -25%;
+        top: -15%;
         z-index: -1;
     }
     .magazineAisdeMenu:before{
@@ -121,9 +125,8 @@
                 width: 100%;
                 position: absolute;
                 top: 34px;
-                left: -100%;
-                opacity: 0;
-                z-index: 1;
+                left: 0;
+                display: none;
                 a{
                     display: block;
                     font-size: 16px;
@@ -136,16 +139,16 @@
                 }
             }
             .selectMenu:hover > .subSelectMenu{
-                left: 0;
-                opacity: 1;
-                z-index: 2;
-                transition: .5s;
+                display: block;
+            }
+            .mobileSelectYears{
+                display: none;
             }
             
     }
     .storyArticle{
         width: 80%;
-        margin: 0 auto 40px auto;
+        margin: 0 auto;
         .storyPicDescription{
             width: 90%;
             margin: 0 auto 50px auto;
@@ -180,7 +183,6 @@
             p{
                 text-indent: 2em;
                 padding: 30px 50px;
-                
             }
         }
     }
@@ -192,12 +194,15 @@
     .allMagazine{
         width: 80%;
         margin: 0 auto;
+        .mobileSelect{
+            display: none;
+        }
     }
     .allStoryList,
-    .northStory,
-    .centralStory,
-    .southStory,
-    .eastStory{
+    .northStoryList,
+    .centralStoryList,
+    .southStoryList,
+    .eastStoryList{
         h2{
             font-size: 0;
         }
@@ -245,9 +250,13 @@
                 font-size: 16px;
             }
             .moreBtn{
+                padding-left: 0;
                 position: absolute;
                 bottom: 10px;
-                right: 10px;
+                right: 7px;
+            }
+            .moreBtn:before{
+                left: 0;
             }
         }
     }
@@ -269,4 +278,113 @@
         }
     }
 
+}
+@media screen and (max-width: 769px){
+    .header{
+        .headerPic{
+           .pcHeaderPic{
+               display: none;
+           } 
+           .mobileHeaderPic{
+               display: block;
+           }
+        }
+        .headerPic:after{
+            width: 100%;
+        }
+    }
+    .storyOfPeople{
+        .selectArea{
+            display: none;
+        }
+        .storyBreadCrumb,
+        .magazineBreadCrumb{
+            margin-bottom: 20px;
+        }
+        .allStory,
+        .northStory,
+        .centralStory,
+        .southStory,
+        .eastStory,
+        .allMagazine{
+            width: 100%;
+            .mobileSelect{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                li{
+                    font-size: 0;
+                }
+                a{
+                    display: block;
+                    font-size: 16px;
+                    padding: 0 20px;
+                    border-bottom: 1px solid #aaa;
+                    transition: .3s;
+                }
+                a:hover{
+                    color: $hover-border-color;
+                }
+            }
+            .allStoryList,
+            .northStoryList,
+            .centralStoryList,
+            .southStoryList,
+            .eastStoryList{
+                li{
+                background-image: none;
+                display: block;
+                margin-bottom: 100px;
+                .allStoryPic{
+                    width: 100%;
+                }
+                .allStoryTxt{
+                    background-image: url(../material/02-PAD/02-sales/bg-sales-list-PC.svg);
+                    background-position: center center;
+                    background-size: cover;
+                    width: 100%;
+                    text-align: center;
+                    padding: 0 20px;
+                    p:nth-child(2){
+                        display: none;
+                    }
+                    .moreBtn{
+                        right: 15px;
+                        bottom: -50px;
+                    }
+                }
+            }
+        }
+        }
+        .storyArticle{
+        width: 90%;
+        .storyPicDescription{
+            background-image: none;
+            width: 100%;
+            display: block;
+            .storyPic{
+                width: 100%;
+            }
+            .picTxt{
+                width: 100%;
+                background-image: url(../material/02-PAD/02-sales/bg-sales-list-PC.svg);
+                background-size: cover;
+                background-position: center bottom;
+            }
+        }
+    }
+    }
+    .magazines{
+        .magazineContent{
+            width: 90%;
+            .selectYears{
+                display: none;
+            }
+            .mobileSelectYears{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    
 }

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+// Common
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html,
 body {
 	line-height: 1.5;
@@ -27,7 +28,7 @@ img {
 	width: 100%;
 }
 .section {
-	padding: 50px 0 70px 0;
+	padding: 50px 0;
 }
 .sectionContainer,
 .allContent {
@@ -176,4 +177,21 @@ img {
 .moreBtn:hover:before {
 	height: 0;
 	transform: translate(5px, 5px);
+}
+@media screen and (max-width: 769px){
+	.asideBar,
+	.asideCommon{
+		display: none;
+	}
+	.moreBtn{
+		padding: 0;
+	}
+	.moreBtn:before {
+		left: 0;
+	}
+}
+@media screen and (max-width: 415px){
+	.section {
+		padding: 25px 0;
+	}
 }

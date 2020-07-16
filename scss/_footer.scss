@@ -30,6 +30,9 @@
         }
         .footerAboutIssue{
             display: flex;
+            li{
+                margin-right: 20px;
+            }
         }
     }
     
@@ -42,4 +45,17 @@
     text-align: center;
     color: $txt-color;
     background-color: $footer-copyright;
+}
+@media screen and (max-width: 769px){
+    .footerContent{
+        .footerInfo{
+            .footerAboutIssue{
+                display: block;
+            }
+        }
+        .contactInfo{
+            display: block;
+            text-align: center;
+        }
+    }
 }

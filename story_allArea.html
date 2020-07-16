@@ -18,7 +18,7 @@
     <meta property="og:side_name" content="">
     <meta property="fb:app_id" content="">
 
-    <title>All Story</title>
+    <title>所有地區故事</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/reset.css">
@@ -30,9 +30,14 @@
     <div class="allContent">
         <div class="asideContent">
             <header class="header">
-                <h1>All Story</h1>
+                <h1>所有地區故事</h1>
                 <div class="headerPic">
-                    <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/03-story/NewPage_story-title-PC.png?raw=true" alt="Header Picture">
+                    <a href="story_allArea.html">
+                        <img class="pcHeaderPic" src="material/01-PC/03-story/NewPage_story-title-PC.svg" alt="Header Picture">
+                    </a>
+                    <a href="story_allArea.html">
+                        <img class="mobileHeaderPic" src="material/02-PAD/03-story/NewPage_story-title-PAD.svg" alt="Mobile Header Picture">
+                    </a>
                 </div>
             </header>
             <main>
@@ -97,11 +102,31 @@
                                 </li>
                             </ol>
                             <div class="allStory">
+                                <ol class="mobileSelect">
+                                    <li>
+                                        <a href="story_allArea.html">全部地區</a>
+                                    </li>
+                                    <li>
+                                        <a href="story_northArea.html">北部地區</a>
+                                    </li>
+                                    <li>
+                                        <a href="story_centralArea.html">中部地區</a>
+                                    </li>
+                                    <li>
+                                        <a href="story_southArea.html">南部地區</a>
+                                    </li>
+                                    <li>
+                                        <a href="story_eastArea.html">東部地區</a>
+                                    </li>
+                                    <li>
+                                        <a href="story_otherArea.html">海外</a>
+                                    </li>
+                                </ol>
                                 <ol class="allStoryList">
                                     <h2>All Story List</h2>
                                     <li>
                                         <div class="allStoryPic">
-                                            <img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/sales/sales_01.png?raw=true" alt="">
+                                            <img src="material/sales/sales_01.png" alt="">
                                         </div>
                                         <div class="allStoryTxt">
                                             <h3><span>台北捷運圓山站</span></h3>
@@ -114,7 +139,7 @@
                                     </li>
                                     <li>
                                         <div class="allStoryPic">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/sales/sales_02_a.png" alt="">
+                                            <img src="material/sales/sales_02_a.png" alt="">
                                         </div>
                                         <div class="allStoryTxt">
                                             <h3><span>台北捷運龍山寺站</span></h3>
@@ -131,7 +156,7 @@
                                     </li>
                                     <li>
                                         <div class="allStoryPic">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/sales/sales_03.png" alt="">
+                                            <img src="material/sales/sales_03.png" alt="">
                                         </div>
                                         <div class="allStoryTxt">
                                             <h3><span>台北捷運臺大醫院站</span></h3>
@@ -148,7 +173,7 @@
                                     </li>
                                     <li>
                                         <div class="allStoryPic">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/sales/sales_04.png" alt="">
+                                            <img src="material/sales/sales_04.png" alt="">
                                         </div>
                                         <div class="allStoryTxt">
                                             <h3><span>新竹火車站</span></h3>
@@ -164,7 +189,7 @@
                                     </li>
                                     <li>
                                         <div class="allStoryPic">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/sales/sales_05.png" alt="">
+                                            <img src="material/sales/sales_05.png" alt="">
                                         </div>
                                         <div class="allStoryTxt">
                                             <h3><span>台中勤美誠品</span></h3>
@@ -180,7 +205,7 @@
                                     </li>
                                     <li>
                                         <div class="allStoryPic">
-                                            <img src="https://raw.githubusercontent.com/Soumeteor/the-big-iusse/master/material/sales/sales_06.png" alt="">
+                                            <img src="material/sales/sales_06.png" alt="">
                                         </div>
                                         <div class="allStoryTxt">
                                             <h3><span>雲林科技大學</span></h3>
@@ -254,25 +279,28 @@
 
         <div class="asideBar">
                 <div class="asideLogo">
-                    <a href="index.html"><img src="https://github.com/Soumeteor/the-big-iusse/blob/master/material/logo/Nav_logo-01.png?raw=true" alt="Aside Big Issue Logo"></a>
+                    <a href="index.html"><img src="material/logo/Nav_logo-01.png" alt="Aside Big Issue Logo"></a>
                 </div>
                 <nav>
                     <h2>Aside Navigation</h2>
                     <ul class="asideNavBarList">
                         <li>
-                           <a href="all_magazine.html"><span>各期雜誌</span></a>
+                           <a href="#issueId"><span>各期雜誌</span></a>
                         </li>
                         <li>
-                            <a href="story_allArea.html"><span>銷售群像</span></a>
+                            <a href="#salesId"><span>銷售群像</span></a>
                         </li>
                         <li>
-                            <a href="index.html#aboutId"><span>關於大誌</span></a>
+                            <a href="#aboutId"><span>關於大誌</span></a>
                         </li>
                         <li>
-                            <a href="index.html#supportId"><span>訂閱支持</span></a>
+                            <a href="#supportId"><span>訂閱支持</span></a>
                         </li>
                         <li>
-                            <a href="index.html#salePointsId"><span>販售場所</span></a>
+                            <a href="#salePointsId"><span>販售場所</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>回到頂端</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -307,7 +335,7 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="footerInfo">
+                <ul class="footerInfo contactInfo">
                     <li>
                         <ul class="footerAboutIssue">
                             <li>地址： 八德路一段28號2樓</li>

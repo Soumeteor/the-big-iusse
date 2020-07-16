@@ -1,3 +1,4 @@
+// Issue Carousel
 .issue{
     h2{
         font-size: 36px;
@@ -16,6 +17,62 @@
             }
             .animate__fadeInUp{
                 animation-delay: .5s;
+            }
+            .mobileCarousel{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 769px){
+    .issue{
+        h2{
+            padding: 25px 0;
+        }
+        .pcCarousel{
+            display: none;
+        }
+        .issueContent{
+            position: relative;
+            .carousel{
+                .mobileCarousel{
+                    display: block;
+                    padding: 30px;
+                }
+            }
+        }
+        .issueContent:before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            top: 40%;
+            left: 0;
+            background-image: url(../material/02-PAD/00-banner/mag_bg.png);
+            background-size: cover;
+            z-index: -1;
+        }
+        .moreBtn{
+            padding: 0;
+            a{
+                color: #fff;
+            }
+        }
+        .moreBtn:before{
+            left: 0;
+            border-left: 2px solid #323232;
+        }
+    }
+}
+@media screen and (max-width: 415px){
+    .issue{
+        h2{
+            font-size: 26px;
+        }
+        .issueContent{
+            .carousel{
+                width: 90%;
+                margin: 0 auto 20px;
             }
         }
     }
