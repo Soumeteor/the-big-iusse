@@ -17,6 +17,7 @@
     display: flex;
     .storyAisdeMenu,
     .magazineAisdeMenu{
+        display: none;
         padding: 100px 0;
         position: relative;
         li{
@@ -62,6 +63,9 @@
         width: 90%;
         margin: 0 auto;
         position: relative;
+        .magazineAisdeMenu.Ph{
+            display: block;
+        }
     }
     .storyBreadCrumb,
     .magazineBreadCrumb{
@@ -163,7 +167,7 @@
                     width: 90%;
                     margin: 0 auto;
                     padding: 20px;
-                    background-color: rgba(245, 243, 242, .5);
+                    // background-color: rgba(245, 243, 242, .5);
                 }
                 .salesName{
                     padding-top: 0;
