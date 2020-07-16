@@ -27,6 +27,67 @@ function clearAllActive() {
 
 
 
+// // jimmy
+// var buttonNorth = document.querySelector(".btnNorth")
+// // console.log(buttonNorth)
+// var buttonCenter = document.querySelector(".btnCenter")
+// var buttonSouth = document.querySelector(".btnSouth")
+// var buttonEast = document.querySelector(".btnEast")
+// var contentNorth = document.querySelector(".contentNorth")
+// // console.log(contentNorth)
+// var contenCenter = document.querySelector(".contenCenter")
+// var contentSouth = document.querySelector(".contentSouth")
+// var contentEast = document.querySelector(".contentEast")
+
+
+// button_Second.onclick = function(){
+//     // console.log(buttonSecond)
+//     clearAll()
+    
+//     tab_Second.classList.add("active")
+//     button_Second.classList.add("active")
+
+// }
+
+// button_Third.onclick = function(){
+//     // console.log(buttonSecond)
+//     clearAll()
+//     tab_Third.classList.add("active")
+//     button_Third.classList.add("active")
+    
+
+// }
+
+// button_One.onclick = function(){
+//     // console.log(buttonSecond)
+//     clearAll()
+//     tab_One.classList.add("active")
+//     button_One.classList.add("active")
+
+// }
+
+// function clearAll(){
+//     tab_One.classList.remove("active")
+//     tab_Second.classList.remove("active")
+//     tab_Third.classList.remove("active")
+
+//     button_One.classList.remove("active")
+//     button_Third.classList.remove("active")
+//     button_Second.classList.remove("active")
+//     console.log(clearAll)
+
+// }
+
+
+
+
+
+
+
+
+
+
+
 
 // 
 // var sideTitle = document.querySelector(".outlineFixed")
