@@ -53,7 +53,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            z-index: 2;
+            z-index: 3;
             background-color: #323232;
             box-shadow: 0 3px 5px #aaa;
             .logo{
@@ -61,26 +61,24 @@
                 padding: 20px;
             }
         }
-        .mobileNavBar.backgroundChange{
-            background-color: #323232;
-        }
         h2{
             font-size: 0;
         }
         #headerMenuCtrl{
             position: absolute;
+            display: none;
             opacity: 0;
             z-index: -1;
         }
         #headerMenuCtrl:checked ~ .navWrap .mobileNavBarList{
             top: 75px;
         }
-        #headerMenuCtrl:checked ~ .navWrap .menuCtrl:before{
+        #headerMenuCtrl:checked ~ .menuCtrl:before{
             box-shadow: 0px 12px 0 transparent,
                         0px -12px 0 transparent;
             transform: rotate(45deg);
         }
-        #headerMenuCtrl:checked ~ .navWrap .menuCtrl:after{
+        #headerMenuCtrl:checked ~ .menuCtrl:after{
             transform: rotate(-45deg);
         }
         .navWrap{
@@ -98,7 +96,7 @@
             top: 10px;
             right: 20px;
             font-size: 0;
-            z-index: 2;
+            z-index: 3;
         }
         .menuCtrl:before,
         .menuCtrl:after{
@@ -123,7 +121,7 @@
             top: -999px;
             left: 0;
             width: 100%;
-            z-index: 1;
+            z-index: 2;
             transition: 1s;
             li{
                 font-size: 0;
@@ -190,6 +188,22 @@
                 top: 0;
                 left: -4%;
             }
+        }
+    }
+}
+@media screen and (max-width: 415px){
+    .header{
+        .mobileNavBar{
+            .logo{
+                width: 45%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 376px){
+    .header{
+        #headerMenuCtrl:checked ~ .navWrap .mobileNavBarList{
+            top: 70px;
         }
     }
 }

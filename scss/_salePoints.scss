@@ -49,11 +49,11 @@
         }
         .content-group{
             width: 50%;
+            position: relative;
+            z-index: 0;
         }
         .areaMap{
             display: none;
-            position: relative;
-            z-index: -1;
         }
         .areaMap.mapOn{
             display: block;
@@ -63,14 +63,13 @@
         .southArea img:last-child,
         .eastArea img:last-child{
             position: relative;
-            z-index: 2;
         }
         .northArea img:first-child,
         .westArea img:first-child,
         .southArea img:first-child,
         .eastArea img:first-child{
             position: absolute;
-
+            z-index: 0;
         }
         .northArea img:first-child{
             top: 0;
@@ -88,6 +87,9 @@
             top: 50%;
             left: -45%;
         }
+    }
+    .mobileTaiwanPoint{
+        display: none;
     }
 }
 .fixedPointsPhone{
@@ -122,26 +124,78 @@
         }
     }
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 415px){
     .salePoints{
-        padding:0px;
+        h2{
+            font-size: 26px;
+        }
         .salePointsContent{
-            background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/sales/bg-sales.png?raw=true);
-            opacity: 0.8;
             .saleStore{
-                width: 80%;
-                .saleStoreMaps{
-                    margin-bottom: 0;
-                    
+                width: 90%;
+            }
+            .saleStoreTxt{
+                p{
+                    font-size: 14px;
+                    span{
+                        display: block;
+                    }
                 }
-                .saleStoreTxt{
-                    margin:20px 0 50px;
+            }
+            .saleGoogleMap{
+                iframe{
+                    height: 350px;
+                }
+            }
+        }
+    }
+    .fixedPoints{
+        padding: 20px 0;
+        h2{
+            font-size: 26px;
+        }
+        .fixedPointTxt{
+            font-size: 14px;
+        }
+        .taiwanAreas{
+            display: none;
+        }
+        .mobileTaiwanPoint{
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            .mobilePointList{
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                .mobileArea{
+                    width: 25%;
+                    padding: 10px 0;
+                    border: 1px solid #aaa;
+                }
+                .mobileArea:first-child{
+                    border: 1px solid #aaa;
+                }
+                .mobileArea:first-child ~ .mobileArea{
+                    border-left: none;
+                }
+                .mobileArea.areaOpen{
+                    background-color: $hover-background-color;
+                    color: $hover-color;
+                }
+            }
+            .mobilePointMap{
+                .mobileStore{
+                    border: 1px solid #aaa;
+                    border-top: none;
+                    display: none;
+                }
+                .mobileStore.storeOn{
+                    display: block;
                 }
             }
         }
     }
 }
-
 
 
 

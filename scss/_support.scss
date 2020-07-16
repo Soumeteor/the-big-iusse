@@ -2,6 +2,9 @@
     h2{
         font-size: 0;
     }
+    .mobileSupportBanner{
+        display: none;
+    }
 }
 .support{
     h2{
@@ -20,8 +23,7 @@
         margin-bottom: 50px;
     }
     p{
-        padding: 10px 0;
-        text-align: center;
+        padding: 20px 0;
     }
     .supportList{
         display: flex;
@@ -50,34 +52,47 @@
         
     }
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 769px){
+    .support{
+        h2{
+            padding: 25px 0;
+        }
+        .supportWay{
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-width: 415px){
     .supportBanner{
-        padding: 0 0;
+        .pcSupportBanne{
+            display: none;
+        }
+        .mobileSupportBanner{
+            display: block;
+        }
+        p{
+            padding: 20px;
+            background-color: #323232;
+            color: #fff;
+            font-size: 14px;
+        }
+        p:last-child{
+            padding-top: 0;
+        }
     }
     .support{
         h2{
-            padding:  25px 0 ;
+            font-size: 26px;
         }
-        .supportContent{
-            background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/sales/bg-sales.png?raw=true);
-           .supportWay{
-               width: 90%; 
-               background-color:  rgba(255, 255, 255, 0.5);
-               padding: 10px;
-               .supportTxt{
-                   
-               }
-               .supportList{
-                   display: block;
-                   li{
-                       width: 100%;
-                       margin-bottom: 15px;
-                   }
-               }
-           }
+        p{
+            font-size: 14px;
         }
-        .moreBtn{
-            padding-top: 50px;
+        .supportList{
+            display: block;
+            li{
+                width: 80%;
+                margin: 0 auto 50px;
+            }
         }
     }
 }

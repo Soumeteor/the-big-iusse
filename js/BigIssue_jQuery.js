@@ -18,17 +18,10 @@ $(document).ready(function () {
         });
     });
 
-    // 
-    $(".closeBtn").click(function (closeBtn) {
-        $("#menuBtn").click()
-    });
-
-
-    // 
-    // $(".menuCtrl").onclick(function () {
-    //     $(".mobileNavBar").addClass()
-    // })
-
+    // 點選連結後，關閉 mobile menu
+    $(".closeMenu").click(function () {
+        $("#headerMenuCtrl").click()
+    })
 
     // RWD Maps
     $('img[usemap]').rwdImageMaps();

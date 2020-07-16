@@ -103,42 +103,27 @@
         
     }
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 415px){
     .sales{
-        padding: 50px 0 0 0 ;
+        h2{
+            font-size: 26px;
+        }
         .salesContent{
             .salesStory{
+                width: 100%;
                 .salesList{
                     display: block;
-                    margin-bottom: 0px;
+                    width: 90%;
+                    margin: 0 auto;
                     li{
                         width: 100%;
-                        padding: 20px 0 ;
-                        .salesPhoto{
-                            width: 100%;
-                        }
-                        .storyTxt{
-                            h3{
-                                font-size: 20px;
-                                font-weight: 500;
-                            }
-                            p{
-                                font-size: 16px;
-                            }
-                            p:last-child{
-                                display: none;
-                            }
-                            
-                        }
-                        .moreBtn{
-                            width: 45%;
-                        }
+                        margin-bottom: 50px;
                     }
                 }
             }
-        }
-        .moreBtn{
-            width: 60%;
+            .salesList ~ .salesList{
+                display: none;
+            }
         }
     }
 }

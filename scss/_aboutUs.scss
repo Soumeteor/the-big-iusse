@@ -1,3 +1,4 @@
+// AboutUs
 .about{
     h2{
         font-size: 36px;
@@ -32,99 +33,58 @@
         }
         .aboutTxt{
             width: 50%;
-            background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/04-about/bg-about.png?raw=true);
+            background-image: url(../material/01-PC/04-about/bg-about.png);
             display: flex;
             flex-direction: column;
             justify-content: center;
             h3,h4,p{
-                width: 90%;
+                width: 100%;
                 text-align: center;
-                padding: 10px;
+                padding: 10px 50px;
                 background-color: $txt-backgorund-color;
             }
             h3{
                 font-size: 22px;
+                padding-top: 30px;
             }
             h4{
-               font-size: 16px; 
+               font-size: 14px; 
             }
             p{
-                font-size: 14px;
+                font-size: 12px;
+                padding-bottom: 30px;
             }
         }
     }
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 769px){
     .about{
-        
         h2{
-            padding: 25px 0 ;
+            padding: 25px 0;
         }
-        .aboutContent{
-            padding: 20px 0;
-            background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/sales/bg-sales.png?raw=true);
-            .aboutUs{
-                width: 80%;
-                li{
-                    display: block;
-                    margin-bottom: 20px;
-                    .aboutPic{
-                        width: 100%;   
-                    }
-                 
-                    .aboutTxt{
-                        width: 100%;
-                        display: inline-flex ;
-                        
-                        h3,h4,p{
-                            width: 100%;
-                            margin: 0 auto;
-                            text-align: center;
-                            padding: 10px;
-                            background-color:  rgba(255, 255, 255, 0.5)
-                        }
-                        h3{
-                            padding-top: 20px;
-                        }
-                      
-                    }
-                
-                }
-                li:nth-child(1){
-                    .aboutPic{
-                        .numberPic{
-                            width: 20%;
-                            position: absolute;
-                            left: 78%;
-                        }   
+        .aboutUs{
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-width: 415px){
+    .about{
+        h2{
+            font-size: 26px;
+        }
+        .aboutUs{
+            li{
+                // width: 100%;
+                display: block;
+                .aboutPic{
+                    width: 100%;
+                    .numberPic{
+                        display: none;
                     }
                 }
-                li:nth-child(2){
-                    .aboutPic{
-                        .numberPic{
-                            width: 20%;
-                            position: absolute;
-                            left: 2%;
-                            src: url(https://raw.githubusercontent.com/Soumeteor/the-big-iusse/d1c005e6903a3dfd7329b8afe2872d0f5fd2ff47/material/01-PC/04-about/aboutme_number_02%20reverse.svg);
-                        }   
-                    }
-                    .aboutTxt{
-                        h4:nth-child(3){
-                            display: none;
-                        }
-                        
-                    }
+                .aboutTxt{
+                    width: 100%;
                 }
-                li:nth-child(3){
-                    .aboutPic{
-                        .numberPic{
-                            width: 20%;
-                            position: absolute;
-                            left: 78%;
-                        }   
-                    }
-                }
-                
             }
         }
     }
