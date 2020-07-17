@@ -1273,7 +1273,7 @@ img {
 .magazines .southStoryList .allStoryTxt .moreBtn a,
 .magazines .eastStoryList .allStoryTxt .moreBtn a {
   font-size: 14px;
-  padding: 5px 10px;
+  padding: 10px;
 }
 
 .storyOfPeople .allStoryList .allStoryTxt .moreBtn a:after,
@@ -1286,7 +1286,7 @@ img {
 .magazines .centralStoryList .allStoryTxt .moreBtn a:after,
 .magazines .southStoryList .allStoryTxt .moreBtn a:after,
 .magazines .eastStoryList .allStoryTxt .moreBtn a:after {
-  top: -5px;
+  top: -8px;
 }
 
 .storyOfPeople .allStoryList .allStoryTxt .moreBtn:before,
