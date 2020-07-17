@@ -489,6 +489,7 @@ img {
   }
   .issue .moreBtn a {
     color: #fff;
+    background-color: transparent !important;
   }
   .issue .moreBtn:before {
     left: 0;
