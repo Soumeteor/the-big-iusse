@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 html,
 body {
   line-height: 1.5;
   scroll-behavior: smooth;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 h1,
@@ -73,7 +73,7 @@ img {
   font-size: 18px;
   writing-mode: vertical-rl;
   line-height: 100px;
-  padding: 25px 0;
+  padding: 15px 0;
   position: relative;
   transition: 0.5s;
 }
@@ -162,7 +162,6 @@ img {
   position: absolute;
   height: 140%;
   border-right: 2px solid #aaa;
-  top: -6px;
   right: 0;
   border-left: 2px solid #aaa;
   top: -11px;
@@ -190,7 +189,7 @@ img {
 .moreBtn:before {
   content: "";
   position: absolute;
-  height: 35%;
+  height: 20%;
   border-left: 2px solid #fff;
   z-index: 2;
   top: 12px;
@@ -269,6 +268,9 @@ img {
 }
 
 @media screen and (max-width: 769px) {
+  .header .mobileDivider {
+    padding: 40px 0;
+  }
   .header .pcHeaderBanner {
     display: none;
   }
@@ -415,6 +417,9 @@ img {
 }
 
 @media screen and (max-width: 415px) {
+  .header .mobileDivider {
+    padding: 0;
+  }
   .header .mobileNavBar .logo {
     width: 45%;
   }
@@ -736,7 +741,7 @@ img {
   height: 1px;
   background-color: #dbdbdc;
   left: 0;
-  bottom: 20px;
+  bottom: 20%;
 }
 
 .storyOfPeople,
@@ -818,6 +823,27 @@ img {
   position: relative;
 }
 
+.storyOfPeople .storyContent .moreBtn,
+.storyOfPeople .magazineContent .moreBtn,
+.magazines .storyContent .moreBtn,
+.magazines .magazineContent .moreBtn {
+  padding: 0;
+}
+
+.storyOfPeople .storyContent .moreBtn a,
+.storyOfPeople .magazineContent .moreBtn a,
+.magazines .storyContent .moreBtn a,
+.magazines .magazineContent .moreBtn a {
+  margin-bottom: 50px;
+}
+
+.storyOfPeople .storyContent .moreBtn:before,
+.storyOfPeople .magazineContent .moreBtn:before,
+.magazines .storyContent .moreBtn:before,
+.magazines .magazineContent .moreBtn:before {
+  left: 0;
+}
+
 .storyOfPeople .storyBreadCrumb,
 .storyOfPeople .magazineBreadCrumb,
 .magazines .storyBreadCrumb,
@@ -873,6 +899,11 @@ img {
 .magazines .storyBreadCrumb a:hover > span:before,
 .magazines .magazineBreadCrumb a:hover > span:before {
   width: 100%;
+}
+
+.storyOfPeople .mobileStorytBreadCrumb,
+.magazines .mobileStorytBreadCrumb {
+  display: none;
 }
 
 .storyOfPeople .selectArea,
@@ -948,16 +979,22 @@ img {
   display: none;
 }
 
+.storyOfPeople .mobileSelectYears,
+.magazines .mobileSelectYears {
+  display: none;
+}
+
 .storyOfPeople .storyArticle,
 .magazines .storyArticle {
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .storyOfPeople .storyArticle .storyPicDescription,
 .magazines .storyArticle .storyPicDescription {
   width: 90%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 100px auto;
   display: flex;
   align-items: center;
   background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/03-story/Story_bg.png?raw=true);
@@ -997,10 +1034,35 @@ img {
   text-align: right;
 }
 
+.storyOfPeople .storyArticle .storyTxtContent,
+.magazines .storyArticle .storyTxtContent {
+  position: relative;
+}
+
 .storyOfPeople .storyArticle .storyTxtContent p,
 .magazines .storyArticle .storyTxtContent p {
   text-indent: 2em;
   padding: 30px 50px;
+}
+
+.storyOfPeople .storyArticle .storyTxtContent:before,
+.magazines .storyArticle .storyTxtContent:before {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #aaa;
+  height: 110%;
+  top: -20%;
+  right: 0;
+}
+
+.storyOfPeople .storyArticle .storyTxtContent:after,
+.magazines .storyArticle .storyTxtContent:after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #aaa;
+  width: 100%;
+  right: -10%;
+  top: -5%;
 }
 
 .storyOfPeople .allStory,
@@ -1059,6 +1121,8 @@ img {
 .magazines .eastStoryList li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
   background-image: url(https://github.com/Soumeteor/the-big-iusse/blob/master/material/01-PC/03-story/Story_bg.png?raw=true);
   margin-bottom: 50px;
 }
@@ -1101,7 +1165,6 @@ img {
 .magazines .southStoryList .allStoryTxt,
 .magazines .eastStoryList .allStoryTxt {
   width: 60%;
-  position: relative;
   padding: 10px;
 }
 
@@ -1193,8 +1256,36 @@ img {
 .magazines .eastStoryList .allStoryTxt .moreBtn {
   padding-left: 0;
   position: absolute;
-  bottom: 10px;
-  right: 7px;
+  bottom: -20%;
+  right: 2%;
+}
+
+.storyOfPeople .allStoryList .allStoryTxt .moreBtn a,
+.storyOfPeople .northStoryList .allStoryTxt .moreBtn a,
+.storyOfPeople .centralStoryList .allStoryTxt .moreBtn a,
+.storyOfPeople .southStoryList .allStoryTxt .moreBtn a,
+.storyOfPeople .eastStoryList .allStoryTxt .moreBtn a,
+.magazines .allStoryList .allStoryTxt .moreBtn a,
+.magazines .northStoryList .allStoryTxt .moreBtn a,
+.magazines .centralStoryList .allStoryTxt .moreBtn a,
+.magazines .southStoryList .allStoryTxt .moreBtn a,
+.magazines .eastStoryList .allStoryTxt .moreBtn a {
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+
+.storyOfPeople .allStoryList .allStoryTxt .moreBtn a:after,
+.storyOfPeople .northStoryList .allStoryTxt .moreBtn a:after,
+.storyOfPeople .centralStoryList .allStoryTxt .moreBtn a:after,
+.storyOfPeople .southStoryList .allStoryTxt .moreBtn a:after,
+.storyOfPeople .eastStoryList .allStoryTxt .moreBtn a:after,
+.magazines .allStoryList .allStoryTxt .moreBtn a:after,
+.magazines .northStoryList .allStoryTxt .moreBtn a:after,
+.magazines .centralStoryList .allStoryTxt .moreBtn a:after,
+.magazines .southStoryList .allStoryTxt .moreBtn a:after,
+.magazines .eastStoryList .allStoryTxt .moreBtn a:after {
+  top: -5px;
 }
 
 .storyOfPeople .allStoryList .allStoryTxt .moreBtn:before,
@@ -1207,7 +1298,9 @@ img {
 .magazines .centralStoryList .allStoryTxt .moreBtn:before,
 .magazines .southStoryList .allStoryTxt .moreBtn:before,
 .magazines .eastStoryList .allStoryTxt .moreBtn:before {
+  top: 6px;
   left: 0;
+  height: 15%;
 }
 
 .storyOfPeople .allMagazineList,
@@ -1229,7 +1322,7 @@ img {
 
 .storyOfPeople .allMagazineList li .magazinePic,
 .magazines .allMagazineList li .magazinePic {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .storyOfPeople .allMagazineList li > .moreBtn,
@@ -1237,7 +1330,15 @@ img {
   padding: 0;
 }
 
+.storyOfPeople .allMagazineList li > .moreBtn:before,
+.magazines .allMagazineList li > .moreBtn:before {
+  left: 0;
+}
+
 @media screen and (max-width: 769px) {
+  .header .mobileDivider {
+    padding: 35px 0;
+  }
   .header .headerPic .pcHeaderPic {
     display: none;
   }
@@ -1246,13 +1347,32 @@ img {
   }
   .header .headerPic:after {
     width: 100%;
+    bottom: 10%;
   }
-  .storyOfPeople .selectArea {
+  .storyOfPeople .selectArea,
+  .storyOfPeople .selectYears {
     display: none;
   }
-  .storyOfPeople .storyBreadCrumb,
-  .storyOfPeople .magazineBreadCrumb {
+  .storyOfPeople .storyContent .moreBtn:before {
+    height: 15%;
+  }
+  .storyOfPeople .storyBreadCrumb {
     margin-bottom: 20px;
+  }
+  .storyOfPeople .mobileStorytBreadCrumb {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .storyOfPeople .mobileStorytBreadCrumb a {
+    display: block;
+    padding: 0 15px;
+    transition: .3s;
+  }
+  .storyOfPeople .mobileStorytBreadCrumb a:hover {
+    color: #ff8729;
+  }
+  .storyOfPeople .mobileStorytBreadCrumb span {
+    border-bottom: 1px solid #aaa;
   }
   .storyOfPeople .allStory,
   .storyOfPeople .northStory,
@@ -1401,7 +1521,7 @@ img {
     background-size: cover;
     width: 100%;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 20px 70px 20px;
   }
   .storyOfPeople .allStory .allStoryList li .allStoryTxt p:nth-child(2),
   .storyOfPeople .allStory .northStoryList li .allStoryTxt p:nth-child(2),
@@ -1475,6 +1595,7 @@ img {
     background-image: none;
     width: 100%;
     display: block;
+    margin-bottom: 50px;
   }
   .storyOfPeople .storyArticle .storyPicDescription .storyPic {
     width: 100%;
@@ -1485,15 +1606,72 @@ img {
     background-size: cover;
     background-position: center bottom;
   }
+  .storyOfPeople .storyArticle .storyTxtContent p {
+    padding: 10px;
+  }
+  .storyOfPeople .storyArticle .storyTxtContent:before,
+  .storyOfPeople .storyArticle .storyTxtContent:after {
+    display: none;
+  }
   .magazines .magazineContent {
     width: 90%;
+  }
+  .magazines .magazineContent .magazineBreadCrumb {
+    margin-bottom: 20px;
   }
   .magazines .magazineContent .selectYears {
     display: none;
   }
   .magazines .magazineContent .mobileSelectYears {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+  .magazines .magazineContent .mobileSelectYears a {
+    display: block;
+    transition: .3s;
+  }
+  .magazines .magazineContent .mobileSelectYears a:hover {
+    color: #ff8729;
+  }
+  .magazines .magazineContent .mobileSelectYears span {
+    border-bottom: 1px solid #aaa;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .storyOfPeople .storyBreadCrumb a,
+  .storyOfPeople .magazineBreadCrumb a {
+    font-size: 14px;
+  }
+  .storyOfPeople .allStory .mobileSelect a,
+  .storyOfPeople .northStory .mobileSelect a,
+  .storyOfPeople .centralStory .mobileSelect a,
+  .storyOfPeople .southStory .mobileSelect a,
+  .storyOfPeople .eastStory .mobileSelect a,
+  .storyOfPeople .allMagazine .mobileSelect a {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .magazines .allMagazine {
+    width: 90%;
+  }
+  .magazines .allMagazineList {
+    display: block;
+    margin-bottom: 0;
+  }
+  .magazines .allMagazineList li {
+    width: 100%;
+  }
+  .magazines .allMagazineList:first-child ~ .allMagazineList {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .storyOfPeople .storyBreadCrumb a,
+  .storyOfPeople .magazineBreadCrumb a {
+    padding: 0 5px;
   }
 }
 

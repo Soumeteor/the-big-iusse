@@ -1,4 +1,3 @@
-D
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,6 +35,50 @@ D
         <div class="asideContent">
             <header class="header">
                 <h1>高雄城市光廊&高醫大</h1>
+                <div class="mobileDevice">
+                <input class="headerMenu" type="checkbox" name="" id="headerMenuCtrl">
+                <!-- 為什麼input 沒有使用 display none，會跳回最頂端？ -->
+                <div class="mobileNavBar">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="menuOpenLogo" src="material/logo/LOGO-wt.svg" alt="Big Issue Logo">
+                        </a>
+                    </div>
+                </div> 
+                <label class="menuCtrl" for="headerMenuCtrl">Menu</label>
+                <nav class="navWrap">
+                    <h2>Navigation</h2>
+                    <ul class="mobileNavBarList">
+                        <li>
+                            <a class="closeMenu" href="#issueId"><span>各期雜誌</span></a>
+                        </li>
+                        <li>
+                            <a class="closeMenu" href="#salesId"><span>銷售群像</span></a>
+                        </li>
+                        <li>
+                            <a class="closeMenu" href="#aboutId"><span>關於大誌</span></a>
+                        </li>
+                        <li>
+                            <a class="closeMenu" href="#supportId"><span>支持訂閱</span></a>
+                        </li>
+                        <li>
+                            <a class="closeMenu" href="#salePointsId"><span>販售場所</span></a>
+                        </li>
+                        <li class="menuIcon">
+                            <a href="https://www.facebook.com/bigissue.tw">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/bigissue.tw/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:service@bigissue.tw">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobileDivider"></div>
+                </div>
                 <div class="headerPic">
                      <a href="story_allArea.html">
                         <img class="pcHeaderPic" src="material/01-PC/03-story/NewPage_story-title-PC.svg" alt="Header Picture">
@@ -65,7 +108,7 @@ D
                         <div class="storyContent">
                             <ol class="storyBreadCrumb">
                                 <li>
-                                    <a href="index.html"><span>HOME</span></a>
+                                    <a href="story_allArea.html"><span>全部地區</span></a>
                                 </li>
                                 <li>
                                     <i class="fas fa-caret-right"></i>
@@ -74,11 +117,25 @@ D
                                     <a href="story_southArea.html"><span>南部地區</span></a>
                                 </li>
                                 <li>
-                                    <i class="fas fa-caret-right"></i>
+                                    <i class="
+                                    
+                                
+                                 fas fa-caret-right"></i>
                                 </li>
                                 <!-- 區域所在位置名稱 -->
                                 <li>
                                     <a href="story_ KaohsiungCity.html"><span>高雄城市光廊&高醫大</span></a>
+                                </li>
+                            </ol>
+                            <ol class="mobileStorytBreadCrumb">
+                                <li>
+                                    <a href="story_TainanNCKU.html"><span>上一則</span></a>
+                                </li>
+                                <li>
+                                    <a href="story_ KaohsiungCity.html"><span>本則</span></a>
+                                </li>
+                                <li>
+                                    <a href="story_TaipeiYuanshan.html"><span>下一則</span></a>
                                 </li>
                             </ol>
                             <article>
@@ -134,23 +191,23 @@ D
                     <h2>Aside Navigation</h2>
                     <ul class="asideNavBarList">
                         <li>
-                            <a href="index.html#issueId"><span>各期雜誌</span></a>
-                         </li>
-                         <li>
-                             <a href="index.html#salesId"><span>銷售群像</span></a>
-                         </li>
-                         <li>
-                             <a href="index.html#aboutId"><span>關於大誌</span></a>
-                         </li>
-                         <li>
-                             <a href="index.html#supportId"><span>支持訂閱</span></a>
-                         </li>
-                         <li>
-                             <a href="index.html#salePointsId"><span>販售場所</span></a>
-                         </li>
-                         <li>
-                             <a href="story_ KaohsiungCity.html"><span>回到頂端</span></a>
-                         </li>
+                           <a href="all_magazine.html"><span>各期雜誌</span></a>
+                        </li>
+                        <li>
+                            <a href="story_allArea.html"><span>銷售群像</span></a>
+                        </li>
+                        <li>
+                            <a href="index.html#aboutId"><span>關於大誌</span></a>
+                        </li>
+                        <li>
+                            <a href="index.html#supportId"><span>支持訂閱</span></a>
+                        </li>
+                        <li>
+                            <a href="index.html#salePointsId"><span>販售場所</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>回到頂端</span></a>
+                        </li>
                     </ul>
                 </nav>
         </div>

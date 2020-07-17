@@ -42,6 +42,9 @@
 }
 @media screen and (max-width: 769px){
     .header{
+        .mobileDivider{
+            padding: 40px 0;
+        }
         .pcHeaderBanner{
             display: none;
         }
@@ -193,6 +196,9 @@
 }
 @media screen and (max-width: 415px){
     .header{
+        .mobileDivider{
+            padding: 0;
+        }
         .mobileNavBar{
             .logo{
                 width: 45%;

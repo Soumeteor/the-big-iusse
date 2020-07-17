@@ -1,10 +1,10 @@
 // Common
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 html,
 body {
 	line-height: 1.5;
 	scroll-behavior: smooth;
-	font-family: "Noto Sans TC", sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
 }
 h1,
 h2,
@@ -17,6 +17,7 @@ h6 {
 * {
 	box-sizing: border-box;
 	// outline: 1px solid #f00;
+	
 }
 a,
 a:hover {
@@ -48,7 +49,7 @@ img {
 		z-index: 1;
 		h2 {
 			font-size: 0;
-		}	
+		}
 		.asideLogo {
 			width: 50%;
 			margin: 0 auto;
@@ -62,7 +63,7 @@ img {
 				font-size: 18px;
 				writing-mode: vertical-rl;
 				line-height: 100px;
-				padding: 25px 0;
+				padding: 15px 0;
 				position: relative;
 				transition: 0.5s;
 				span {
@@ -141,7 +142,6 @@ img {
 		position: absolute;
 		height: 140%;
 		border-right: 2px solid $border-color;
-		top: -6px;
 		right: 0;
 		border-left: 2px solid $border-color;
 		top: -11px;
@@ -166,7 +166,7 @@ img {
 .moreBtn:before {
 	content: "";
 	position: absolute;
-	height: 35%;
+	height: 20%;
 	border-left: 2px solid #fff;
 	z-index: 2;
 	top: 12px;
