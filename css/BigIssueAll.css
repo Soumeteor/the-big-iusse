@@ -427,7 +427,7 @@ img {
 
 @media screen and (max-width: 376px) {
   .header #headerMenuCtrl:checked ~ .navWrap .mobileNavBarList {
-    top: 70px;
+    top: 65px;
   }
 }
 
@@ -1993,6 +1993,7 @@ img {
 .footerContent .footerInfo .footerSocial li {
   font-size: 0;
   width: 50px;
+  color: #fff;
 }
 
 .footerContent .footerInfo .footerSocial li a {
