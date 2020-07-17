@@ -125,6 +125,7 @@ img {
 		box-shadow: 5px 5px 0 $box-shadow-color;
 		position: relative;
 		transition: 0.3s;
+		background-color: #fff !important;
 	}
 	a:before {
 		content: "";
@@ -151,8 +152,8 @@ img {
 	a:hover {
 		transform: translate(5px, 5px);
 		box-shadow: 0 0 0 #fff;
-		background-color: $hover-background-color;
-		color: #fff;
+		background-color: $hover-background-color !important;
+		color: #fff !important;
 	}
 	a:hover:before {
 		width: 100% !important;

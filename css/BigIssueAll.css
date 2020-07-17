@@ -143,6 +143,7 @@ img {
   box-shadow: 5px 5px 0 #ff8729;
   position: relative;
   transition: 0.3s;
+  background-color: #fff !important;
 }
 
 .moreBtn a:before {
@@ -172,8 +173,8 @@ img {
 .moreBtn a:hover {
   transform: translate(5px, 5px);
   box-shadow: 0 0 0 #fff;
-  background-color: #ff8729;
-  color: #fff;
+  background-color: #ff8729 !important;
+  color: #fff !important;
 }
 
 .moreBtn a:hover:before {
