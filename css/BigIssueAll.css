@@ -172,8 +172,8 @@ img {
 .moreBtn a:hover {
   transform: translate(5px, 5px);
   box-shadow: 0 0 0 #fff;
-  background-color: #ff8729;
-  color: #ff8729;
+  background-color: #ff8729 !important;
+  color: #fff !important;
 }
 
 .moreBtn a:hover:before {
