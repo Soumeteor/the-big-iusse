@@ -151,8 +151,8 @@ img {
 	a:hover {
 		transform: translate(5px, 5px);
 		box-shadow: 0 0 0 #fff;
-		background-color: $hover-background-color !important;
-		color: #fff !important;
+		background-color: $hover-background-color;
+		color: #fff;
 	}
 	a:hover:before {
 		width: 100%;

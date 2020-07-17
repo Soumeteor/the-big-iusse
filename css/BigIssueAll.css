@@ -172,8 +172,8 @@ img {
 .moreBtn a:hover {
   transform: translate(5px, 5px);
   box-shadow: 0 0 0 #fff;
-  background-color: #ff8729 !important;
-  color: #fff !important;
+  background-color: #ff8729;
+  color: #fff;
 }
 
 .moreBtn a:hover:before {
@@ -1272,7 +1272,6 @@ img {
 .magazines .eastStoryList .allStoryTxt .moreBtn a {
   font-size: 14px;
   padding: 5px 10px;
-  background-color: #fff;
 }
 
 .storyOfPeople .allStoryList .allStoryTxt .moreBtn a:after,
