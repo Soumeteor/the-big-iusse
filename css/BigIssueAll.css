@@ -1352,9 +1352,6 @@ img {
   .storyOfPeople .selectYears {
     display: none;
   }
-  .storyOfPeople .storyContent .moreBtn:before {
-    height: 15%;
-  }
   .storyOfPeople .storyBreadCrumb {
     margin-bottom: 20px;
   }
