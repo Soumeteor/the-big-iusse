@@ -231,6 +231,10 @@ img {
   display: none;
 }
 
+.header a {
+  display: block;
+}
+
 .header .pcHeaderBanner {
   width: 100%;
   max-width: 1440px;
